@@ -101,7 +101,114 @@
     let o = {};
     weakmap.set(o,4);
     console.log(weakmap);
-    console.log(weakmap.get(o));4
+    console.log(weakmap.get(o));//4
     
 
 }
+
+{
+    //数据结构横向对比 增删改查
+
+    let map = new Map();
+    let arr = [] ;
+    //增
+    map.set('t',1);
+    arr.push({t:1})
+    console.info(map,arr)
+        // Map(1) {"t" => 1}
+        //size: (...)
+        //__proto__: Map
+        //[[Entries]]: Array(1)
+        //0: {"t" => 1}
+        //key: "t"
+        //value: 1
+        //length: 1
+
+    //查
+    let map_exist = map.has('t');
+    let arr_exist =  arr.find(item=>item.t)
+    console.info('map-arr',map_exist,arr_exist) // true {t: 1}
+
+    //改
+    map.set('t',2);
+    arr.forEach(item=>item.t?item.t=2:'');
+    console.info('map-array-modify',map,arr);//map-array-modify Map(1) {"t" => 2} [{…}]
+
+    //删除
+    map.delete('t');
+    let index = arr.findIndex(item=>item.t);
+    arr.splice(index,1);
+    console.info('map-arr-empty',map,arr)//map-arr-empty Map(0) {} []
+
+}
+
+{
+    //Set 和 array 的对比
+    let set = new Set();
+    let arr = [];
+    //增
+    let obj = {t:1};
+    set.add(obj);
+    arr.push(obj);
+    console.log('set-arr-add',set,arr)
+      //Set(1) {{…}}
+      //size: (...)
+      //__proto__: Set
+      //[[Entries]]: Array(1)
+      //0:
+      //value: {t: 1}
+      //length: 1
+
+    //查
+    let set_exist = set.has(obj); //方法一样 
+    let arr_exist = arr.find(item=>item.t);
+    console.info('set-arr-find',set_exist,arr_exist) //set-arr-find true {t: 1}
+
+    //改
+
+    set.forEach(item=>item.t?item.t = 2:'')
+    arr.forEach(item=>item.t?item.t = 2:'')
+    console.log('set-arr-modify',set,arr) //set-arr-modify Set(1) {{…}}size: (...)__proto__: Set[[Entries]]: Array(1)0: Objectlength: 1 [{…}]0: {t: 2}length: 1__proto__: Array(0)
+
+    //删除
+    set.forEach(item=>item.t?set.delete(item):'');
+    let index = arr.findIndex(item=>item.t);
+    arr.splice(index,1);
+    console.info('set-arr-empty',arr,set)//set-arr-empty [] Set(0) {}
+
+}
+
+{
+    // set map object 对比
+    let item = {t:1};
+    let map = new Map();
+    let set = new Set();
+    let obj = {};
+    //增
+    map.set('t',1);
+    set.add(item);
+    obj['t'] = 1;
+    console.info('map-set-obj',map,set,obj)
+    
+    //查
+    console.info({
+        map_exist:map.has('t'), //true
+        set_exist:set.has(item),//true
+        obj_exist:'t' in obj // true
+    })
+   //改
+   map.set('t',2);
+   item.t =2;
+   obj['t'] = 2;
+   console.info('map-set-obj-modify',obj,map,set)
+
+   //删除
+   map.delete('t');
+   set.delete(item);
+   delete obj['t'];
+   console.info('map-set-obj-empty',map,set,obj)//map-set-obj-empty Map(0) {} Set(0) {} {}
+}
+
+//优先使用map 不用数组 ，如果考虑数据的唯一性 考虑使用set 放弃数组和obj
+
+
