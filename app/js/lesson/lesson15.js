@@ -47,7 +47,7 @@
       console.info(`剩余次数${count}`);
 
     }
-    let residue = function * (count){
+    let residue = function* (count){
         while(count>0){
             count --;
             yield draw(count);

@@ -1,3 +1,4 @@
+import 'babel-polyfill'; 
 // import './lesson/lesson1';
 // import './lesson/lesson2';      
 // import './lesson/lesson3';      
@@ -12,7 +13,6 @@
 // import './lesson/lesson12';      
 // import './lesson/lesson13';      
 // import './lesson/lesson14';   
-import 'babel-polyfill'   
 import './lesson/lesson15';     
 
 

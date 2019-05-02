@@ -34,13 +34,13 @@
             }
         }
     }
-    for (let key of obj){
-        console.log(key)
+    for (let value of obj){
+        console.log(value)//1 2 3 6 7 8
     }
 }
 {
     let arr  = ['hello','yycf'];
     for(let val of arr){
-        console.log(val)
+        console.log(val) // hello yycf
     }
 }
