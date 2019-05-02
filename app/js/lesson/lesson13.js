@@ -15,9 +15,9 @@ import Img from '../../img/yanyunchangfeng.png';
 {
     let ajax =function(){
         console.log('执行2');
-        return new Promise(function(reslove,reject){
+        return new Promise(function(resolve,reject){
           setTimeout(function (){
-              reslove();
+              resolve();
           },1000)
         })
     };
@@ -28,16 +28,16 @@ import Img from '../../img/yanyunchangfeng.png';
 {
     let ajax =function(){
         console.log('执行3');
-        return new Promise(function(reslove,reject){
+        return new Promise(function(resolve,reject){
           setTimeout(function (){
-              reslove();
+              resolve();
           },1000)
         })
     };
    ajax().then(function(){
-       return new Promise(function(reslove,reject){
+       return new Promise(function(resolve,reject){
            setTimeout(function(){
-               reslove()
+               resolve()
            },2000)
        })
    }).then(function(){
@@ -49,9 +49,9 @@ import Img from '../../img/yanyunchangfeng.png';
 {
     let ajax = function(num){
       console.log('执行4');
-      return new Promise(function(reslove,reject){
+      return new Promise(function(resolve,reject){
           if(num>5){
-              reslove()
+              resolve()
           }else{
               throw Error('出错了')
           }
@@ -72,11 +72,11 @@ import Img from '../../img/yanyunchangfeng.png';
 {
     //所有图片加载完再添加到页面
     function loadImg(src){
-        return new Promise(function(reslove,reject) {
+        return new Promise(function(resolve,reject) {
            let img  = document.createElement('img');
            img.src = src;
            img.onload =function(){
-               reslove(img)
+               resolve(img)
            }
            img.onerror=function(err){
                reject(err)
@@ -96,11 +96,11 @@ import Img from '../../img/yanyunchangfeng.png';
 {
     //有一个图片加载完成就添加到页面
     function loadImg(src){
-        return new Promise(function(reslove,reject) {
+        return new Promise(function(resolve,reject) {
            let img  = document.createElement('img');
            img.src = src;
            img.onload =function(){
-               reslove(img)
+               resolve(img)
            }
            img.onerror=function(err){
                reject(err)
