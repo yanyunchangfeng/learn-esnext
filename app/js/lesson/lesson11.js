@@ -1,5 +1,3 @@
-import { type } from "os";
-
 
 //Proxy Reflect  供应商 代理商 用户 中间连接了用户 和最真实的对象中间的一个层 Reflect 反射的是Object
 
