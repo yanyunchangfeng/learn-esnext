@@ -14,9 +14,15 @@ module.exports={
     module:{
         rules:[
             {
-                test:/\.js/,
+                test:/\.js$/,
                 exclude:/node_modules/,
                 use:['babel-loader']
+            },
+            {
+                test:/\.(png|jpe?g|gif)$/,
+                use:[{
+                    loader:'file-loader'
+                }]
             }
         ]
     },
