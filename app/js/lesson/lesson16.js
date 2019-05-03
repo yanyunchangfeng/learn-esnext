@@ -1,4 +1,6 @@
 //修饰器是一个函数，用来修改类的行为
+
+A = {a:3}
 {
 
     let readonly = function (target,name,descriptor){
@@ -12,9 +14,9 @@
         }
     }
     let test  = new Test();
-    test.time = function(){
-        console.log('reset time')
-    }   
+    // test.time = function(){
+    //     console.log('reset time')
+    // }   报错，readonly property
     console.log(test.time()) //2019-05-03
 }
 
