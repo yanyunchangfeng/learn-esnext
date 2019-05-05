@@ -9,10 +9,10 @@
          return 'c'
      };
      let k = tell();
-     console.log(k.next())   //{value: "a", done: false}
-     console.log(k.next()) // {value: "b", done: false}
-     console.log(k.next()) // {value: "c", done: true}
-     console.log(k.next())      // {value: undefined, done: true}
+    //  console.log(k.next())   //{value: "a", done: false}
+    //  console.log(k.next()) // {value: "b", done: false}
+    //  console.log(k.next()) // {value: "c", done: true}
+    //  console.log(k.next())      // {value: undefined, done: true}
 }
 {
     let obj = {};
@@ -22,23 +22,21 @@
       yield 3;
     }
     for(let value of obj){
-        console.log(value) //1 2 3
+        // console.log(value) //1 2 3
     }
 }
 
 {
     let state = async function (){
-        while(1){
-            await 'A';
-            await 'B';
-            await 'C';
-        }
+        let a = 1;
+           await (a = 50);
+           await console.log(2);
+           return a
     }
-    let status =state();
-    console.log(status.next())
-    console.log(status.next())
-    console.log(status.next())
-    console.log(status.next())
+    let status = state();
+    status.then(function(result){
+     console.log(result)
+    })
 }
 
 {
@@ -63,12 +61,31 @@
     })
 }
 {
+   function timeout(ms){
+       return new Promise(resolve=>{
+           setTimeout(resolve,ms)
+       });
+   }
+   async function fn (value,ms){
+       await timeout(ms);
+       console.log(1000)
+       await timeout(ms*2);
+       console.log(3000)
+       await timeout(ms*3);
+       console.log(6000)
+       await timeout(ms*4);
+       console.log(10000)
+       console.log(value)
+   }
+   fn('hello yycf',1000)// 1000 3000 6000 10000 hello yycf
+}
+{
     //长轮训 比如说服务器的某一个数据状态定期的去变化，前端需要实时取状态 webSocket兼容性不好
     let ajax =function* (){
         yield new Promise(function(resolve,reject){
             //真实接口写在这里
            setTimeout(function(){
-               resolve({code:1})
+               resolve({code:0})
            },200)
         })
     }
