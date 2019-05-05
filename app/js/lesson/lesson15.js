@@ -27,18 +27,18 @@
 }
 
 {
-    // let state = async function (){
-    //     while(1){
-    //         await 'A';
-    //         await 'B';
-    //         await 'C';
-    //     }
-    // }
-    // let status =state();
-    // console.log(status.next())
-    // console.log(status.next())
-    // console.log(status.next())
-    // console.log(status.next())
+    let state = async function (){
+        while(1){
+            await 'A';
+            await 'B';
+            await 'C';
+        }
+    }
+    let status =state();
+    console.log(status.next())
+    console.log(status.next())
+    console.log(status.next())
+    console.log(status.next())
 }
 
 {

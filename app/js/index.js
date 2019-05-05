@@ -20,6 +20,7 @@ import 'babel-polyfill';
 // 问题1 假如一个模块有上百个变量 ，引入麻烦
 //问题2 假如只关心一个
 import lesson17 from './lesson/lesson17';
+import './lesson/lesson18';
 // test();  
 // console.log(A)   //456
 // console.log(test)   //ƒ test() {
