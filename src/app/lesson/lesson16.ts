@@ -1,6 +1,6 @@
 //修饰器是一个函数，用来修改类的行为
 
-A = {a:3}
+// A = {a:3}
 {
 
     let readonly = function (target,name,descriptor){
@@ -21,14 +21,17 @@ A = {a:3}
 }
 
 {
-    let typename = function (target,name,descriptor){
-        target.myname = 'yycf'
-    }
+   let typename = (constructor)=>{
+        // target.myname = 'yycf';
+        console.dir(constructor)
+        constructor.myname = 'yycf'
+    };
     @typename
     class Test{
-
+       static myname
+       
     }
-    console.log('类修饰器',Test.myname) //类修饰器 yycf
+    console.dir(Test.myname) // yycf
     //第三方库修饰器的js库：core-decorators //npm i core-decorators
 }
 

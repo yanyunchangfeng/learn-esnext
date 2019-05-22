@@ -1,5 +1,5 @@
 
-import Img from '../../img/yanyunchangfeng.png';
+import Img from '../../assets/img/yanyunchangfeng.png';
 
 {
     let ajax =function (callback){

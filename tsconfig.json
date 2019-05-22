@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "module": "esnext",
+        "target": "es5",
+        "experimentalDecorators": true,
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

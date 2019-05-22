@@ -4,7 +4,7 @@
   "description": "this is es6 demo",
   "main": "app/js/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --env=dev"
   },
   "repository": {
     "type": "git",
@@ -13,17 +13,14 @@
   "author": "yanyunchangfeng <yanyunchangfeng@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.4.4",
-    "@babel/plugin-proposal-class-properties": "7.4.4",
-    "@babel/plugin-proposal-decorators": "7.4.4",
-    "@babel/preset-env": "7.4.4",
-    "babel-loader": "8.0.5",
-    "babel-polyfill": "^6.26.0",
     "file-loader": "3.0.1",
     "html-webpack-plugin": "3.2.0",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1",
-    "webpack-dev-server": "3.3.1"
+    "webpack-dev-server": "3.3.1",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {}
 }
