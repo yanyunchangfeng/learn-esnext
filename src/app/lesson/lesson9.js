@@ -5,12 +5,12 @@
     let a2 = Symbol();
     console.log(a1 === a2) //false
     console.log(typeof a1) //symbol
-    console.log(a1 ,a2) //Symbol(3) Symbol(3)
+    console.log(a1 ,a2) //Symbol() Symbol()
     //如果要取值，就要用Symbol.for();
     let a3 = Symbol.for('a3'); //'a3是key值'
     //区别 Symbol.for()先检查这个值在全局是否注册过，如果注册过，返回这个值，如果没注册，就调Symbnol()生成一个值
     console.log(a3);//Symbol(a3)
-    let a4  =Symbol.for('a3');
+    let a4  = Symbol.for('a3');
     console.log(a3 === a4) //true
 }
 {

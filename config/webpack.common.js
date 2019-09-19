@@ -8,14 +8,25 @@ module.exports={
         filename: '[name].bundle.js'
     },
     resolve:{
-        extensions:['*','.js','.ts']
+        extensions:['*','.js','.ts','.png']
     },
     module:{
         rules:[
             {
                 test:/\.ts$/,
                 loader:'ts-loader'
-            }
+            }, 
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                  {
+                    loader:'url-loader',
+                    options:{
+                      limit:10000
+                    }
+                  }
+                ]
+           }
         ]
     },
     plugins:[

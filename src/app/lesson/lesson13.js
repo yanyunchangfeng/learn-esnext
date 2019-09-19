@@ -1,5 +1,5 @@
 
-import Img from '../../assets/img/yanyunchangfeng.png';
+import Img from '../../assets/img/yanyunchangfeng';
 
 {
     let ajax =function (callback){
@@ -86,11 +86,11 @@ import Img from '../../assets/img/yanyunchangfeng.png';
     function showImg (imgs){
         imgs.forEach(img=>document.body.append(img))
         }
-    Promise.all([
-        loadImg(Img),
-        loadImg(Img),
-        loadImg(Img),
-    ]).then(showImg)
+    // Promise.all([
+    //     loadImg(Img),
+    //     loadImg(Img),
+    //     loadImg(Img),
+    // ]).then(showImg)
 }
 
 {
