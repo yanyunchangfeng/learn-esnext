@@ -8,7 +8,7 @@
          return descriptor
     }
     class Test{
-        @readonly
+        // @readonly
         time(){
             return '2019-05-03'
         }
