@@ -1,5 +1,4 @@
-
-
+import { async } from "q";
 
 //Generator
 {
@@ -86,7 +85,7 @@
         yield new Promise(function(resolve,reject){
             //真实接口写在这里
            setTimeout(function(){
-               resolve({code:1})
+               resolve({code:0})
            },200)
         })
     }
@@ -221,6 +220,121 @@
 //         {value: 6, done: false}
         result = iterator.next()
     }
+}
+{
+    // 7.yield* 一个Iterator对象会怎么样？ES6里面Array Set Map String NodeLists都实现了Iterator接口
+    function* testYield(){
+        yield* [1,2,3]; //yield* 返回数组的时候，数组会把迭代器对象返回出来，
+        // 这样就导致把执行权限让给了数组的迭代器，从而获得1，2，3的值
+        yield* new Set([4,5,6]);
+        yield* new Map([[1,'one'],[2,'two']]);
+        yield* "HelloWorld"
+    }
+    let iterator = testYield();
+    let result = iterator.next();
+    while(!result.done){
+        console.log(result);
+//  {value: 1, done: false}
+//  {value: 2, done: false}
+//  {value: 3, done: false}
+//  {value: 1, done: false}
+//  {value: 2, done: false}
+//  {value: 3, done: false}
+//  {value: Array(2), done: false}done: false value: (2) [1, "one"]
+//  {value: Array(2), done: false}done: false value: (2) [2, "two"]
+//  {value: "H", done: false}
+//  {value: "e", done: false}
+//  {value: "l", done: false}
+//  {value: "l", done: false}
+//  {value: "o", done: false}
+//  {value: "W", done: false}
+//  {value: "o", done: false}
+//  {value: "r", done: false}
+//  {value: "l", done: false}
+//  {value: "d", done: false}
+        result = iterator.next()
+    }
+}
 
+{
+    // 8.用yield封装Promise
+    function getData(x){
+         return new Promise((resolve,reject)=>{
+             setTimeout(()=>{
+                 resolve(x*2)
+             },1000)
+         })
+    }
+    //我们的目标是：两次异步操作都成功之后，才去做我们的业务，并且两次异步有先后顺序，即第一次异步执行完成后，执行第二步操作
+    function* myBz(){
+        let p1 = yield getData(10);
+        console.log(p1);
+        let p2 = yield getData(20);
+        console.log(p2)
+    }
+    let bzIter = myBz();
+    // bzIter.next().value.then(function(result){
+    //     bzIter.next().value(function(result){
+    //         bzIter.next()
+    //     })
+    // })
+    // 回调地狱
+    //自动调用方法；递归调用工具
+    function runner(generator){
+        let g = generator();
+        function next(data){
+            let result = g.next(data);
+            // next() 方法返回一个包含属性 done 和 value 的对象。该方法也可以通过接受一个参数用以向生成器传值。
+            // next 的参数就是 yield 表达式的返回值。
+            if(result.done){
+                return result.value;
+            }
+            result.value.then(function(data){
+                next(data);//这里开始递归
+            })
+        }
+        next();
+    }
+
+    runner(myBz)
+    // 1s ->20  ,  2s->40
+
+    async function myBz2(){
+        const a = await getData(10);
+        console.log(a);
+        const b = await getData(20);
+        console.log(b)
+    }
+    myBz2().then(result=>{
+        console.log('开始执行其他业务操作')
+    })
 
 }
+
+
+{
+    function* foo(x) {
+        var y = 2 * (yield (x + 1));
+        var z = yield (y / 3);
+          return (x + y + z);
+   }
+ let  b = foo(5);
+ let result = b.next();
+ console.log(result)
+//  b.next() // { value:6, done:false }
+let result2 = b.next(12) // yield(x+1) = 12
+console.log(result2)
+//  b.next(12) // { value:8, done:false }
+ let result3 = b.next(13)
+//  b.next(13) // { value:42, done:true }  z=yield(y/3)=13  5+24+13=42
+console.log(result3)
+// 如果向next()方法提供参数，返回结果就完全不一样了。上面代码第一次调用b的next()方法时，返回x+1的值6；
+// 第二次调用next()方法，将上一次yield表达式的值设为12，因此y等于24，返回y / 3的值8；
+// 第三次调用next()方法，将上一次yield表达式的值设为13，因此z等于13，这时x等于5，y等于24，所以return语句的值等于42。
+
+// 注意，由于next()方法的参数表示上一个yield表达式的返回值，所以在第一次使用next()方法时，传递参数是无效的。
+// V8 引擎直接忽略第一次使用next()方法时的参数，只有从第二次使用next()方法开始，参数才是有效的。
+// 从语义上讲，第一个next()方法用来启动遍历器对象，所以不用带有参数。
+}
+
+
