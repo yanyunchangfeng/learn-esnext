@@ -118,3 +118,4 @@ import Img from '../../assets/img/yanyunchangfeng';
         loadImg(Img)
     ]).then(showImg)
 }
+

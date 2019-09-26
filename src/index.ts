@@ -12,9 +12,9 @@
 // import './app/lesson/lesson12';      
 // import './app/lesson/lesson13';      
 // import './app/lesson/lesson14';   
-// import './app/lesson/lesson15';     
+import './app/lesson/lesson15';     
 // import './app/lesson/lesson16';
-import './app/lesson/lesson18';
+// import './app/lesson/lesson18';
 // import{A,test ,Hello} from  './app/js/lesson/lesson17'; 
 // import * as lesson from './app/js/lesson/lesson17'
 // 问题1 假如一个模块有上百个变量 ，引入麻烦
