@@ -58,14 +58,15 @@
 }
 
 {
-    // 1.WeakSet的元素必须是obj ,2. WeakSet中的对象是弱引用,ta不会检测这个对象有没有在其它地方用过;不会跟垃圾回收机制挂钩，通俗来讲，就是说在weakset中添加一个对象，不是整个值拷过来，而是地址引用，而且它不会检测这个地址是否被垃圾回收掉了
+    // 1.WeakSet的元素必须是obj ,对象中存储的对象值都是被弱引用的, 如果没有其他的变量或属性引用这个对象值, 则这个对象值会被当成垃圾回收掉. 正因为这样, WeakSet 对象是无法被枚举的, 没有办法拿到它包含的所有元素.
      //没有size ，不能使用clear
      //不能便历
     let arr = {a:1,b:2};
     let weakList = new WeakSet();
     weakList.add(arr);
-    arr = null;
-    console.dir(weakList) //WeakSet
+    // arr = null;
+    console.log(weakList) //WeakSet
+
     //    WeakSet
     //__proto__: WeakSet
     //[[Entries]]: Array(1)
@@ -245,6 +246,45 @@
     let difference = new Set([...set2].filter(item=>!set3.has(item)));
     console.log(difference)
     // Set(2) {1, 2}
-
 }
 
+
+{
+    // weakSet核心特性：
+    // 1.WeakSet 里面只能存对象，不能存其它东西
+    // 2.WeakSet 里面的对象是弱引用，只要对象的引用为0，随时可能被垃圾收集器收回
+    // 3.所以WeakSet是不可枚举的，他只有add()/delete()/has()3个方法 ，
+    // 因为里面的对象，有可能在枚举的过程中被收集掉了，这个时候回有诡异的现象发生，这是设计意图。
+    // 4.WeakSet 典型的应用场景是用来缓存DOM节点的引用
+    // 因为我们用WeakSet来缓存这些DOM节点，
+    // 将来在这些DOM节点不被使用的时候，不用担心说是不是有些地方还在持有引用，从而导致内存泄漏的情况。
+    
+    
+    // 1.WeakSet 里面只能存对象，不能存其它东西
+    // const ws1 = new WeakSet(1);
+    // console.log(1)
+    // TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    // 2.WeakSet 里面的对象是弱引用，只要对象的引用为0，随时可能被垃圾收集器收回
+
+    const ws2 = new WeakSet();
+    let arr = [];
+    ws2.add(window)
+    ws2.add(arr)
+    let now,start = new Date().getTime();
+    setInterval(()=>{
+        console.log(ws2)
+        now =  new Date().getTime();
+
+        if((now-start)>=5000){
+            arr = null;
+        }
+        console.log(ws2.has(arr))
+// WeakSet {Window, Array(0)} true
+//  WeakSet {Window, Array(0)} true
+//  WeakSet {Window, Array(0)} true
+//  WeakSet {Window, Array(0)} true
+//  WeakSet {Window, Array(0)} true
+//  WeakSet {Window}  false .....
+// 可以观察到arr置为null后被垃圾回收了
+    },1000)
+}
