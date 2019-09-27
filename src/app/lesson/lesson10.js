@@ -211,4 +211,40 @@
 
 //优先使用map 不用数组 ，如果考虑数据的唯一性 考虑使用set 放弃数组和obj
 
+                   // ------------
+// ES6增加了Set，他是数学里面“集合”的概念，那么问题来了，数学里面的“集合”
+{
+    // new Set([iterable]);
+    // 1.构造方式
+   let set = new Set([1,2,3,4]);
+   //2.基本方法 add()/delete()/has()/clear()
+   set.add(5);
+   console.log(set)
+//    Set(5) {1, 2, 3, 4, 5}
+   set.add(4);
+   console.log(set)
+   //    Set(5) {1, 2, 3, 4, 5}
+   set.delete(5)
+   console.log(set)
+      //    Set(5) {1, 2, 3, 4}
+    //   3.工具方法keys()/values()entries()/forEach()
+    // Iterator
+    // 4.数学上的集合需要支持交并补运算
+    // 交集、并集、补集
+    let set2 = new Set([1,2,3]);
+    let set3 = new Set([3,4,5]);
+    let union = new Set([...set2,...set3])//union 是并集
+    console.log(union)
+    // Set(5) {1, 2, 3, 4, 5}
+    // 交集
+    let interSet = new Set([...set2].filter(item => set3.has(item)))
+    console.log(interSet)
+    // Set(1) {3}
+    // 补集
+    // 属于set2,同时不属于set3，set2-(减)set3
+    let difference = new Set([...set2].filter(item=>!set3.has(item)));
+    console.log(difference)
+    // Set(2) {1, 2}
+
+}
 
