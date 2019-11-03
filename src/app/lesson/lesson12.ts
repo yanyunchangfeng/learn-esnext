@@ -3,6 +3,7 @@
 {
     //基本定义和生成实例
     class Parent{
+      name;
         constructor(name = 'yycf'){
           this.name = name;
 
@@ -14,6 +15,7 @@
 }
 {   //继承
     class Parent{
+      name;
         constructor(name = 'yycf'){
           this.name = name;
 
@@ -28,12 +30,14 @@
 {
      //继承传递参数
     class Parent{
+      name;
         constructor(name = 'yycf'){
           this.name = name;
 
         }
     }
     class Child extends Parent{
+      type;
        constructor(name = 'yycfchild'){
            //在定义自己属性的时候，调用this，一定要放在super后，
            super(name);  //换句话说 在继承关系中，子类构造函数如果用super传递参数，super一定要放在构造函数第一行
@@ -41,12 +45,13 @@
        }
     }
     let ychild = new Child();
-    console.log('extends',ychild) //extends Child {name: "yycf"}
+    console.log('extends',ychild) //extends Child {name: "yycfchild",type: "child"}
 }
 
 {
     // getter setter
     class Parent{
+      name;
         constructor(name = 'yycf'){
           this.name = name;
         }
@@ -67,6 +72,7 @@
 {
     // 静态方法
     class Parent{
+      name;
         constructor(name = 'yycf'){
           this.name = name;
 
@@ -82,6 +88,8 @@
 {
     //静态属性
     class Parent{
+      static type;
+      name;
         constructor(name = 'yycf'){
           this.name = name;
 

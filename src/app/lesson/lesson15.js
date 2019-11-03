@@ -271,6 +271,7 @@ import { async } from "q";
         console.log(p1);
         let p2 = yield getData(20);
         console.log(p2)
+        return p1+p2;
     }
     let bzIter = myBz();
     // bzIter.next().value.then(function(result){
@@ -304,8 +305,10 @@ import { async } from "q";
         console.log(a);
         const b = await getData(20);
         console.log(b)
+        return a+b
     }
     myBz2().then(result=>{
+        console.log(result)
         console.log('开始执行其他业务操作')
     })
 
@@ -338,3 +341,15 @@ console.log(result3)
 }
 
 
+function* mygen(){
+    yield 1;
+    yield 2;
+    return 1+2
+
+}
+let gen = mygen();
+let result = gen.next()
+while(!result.done){
+    console.log(result)
+    result = gen.next()
+}

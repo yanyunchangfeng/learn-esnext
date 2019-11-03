@@ -23,9 +23,8 @@ class Hello{
         console.log('yycf')
     }
 }
-export default{
+export default {
    A,
    test,
    Hello
 }
-
