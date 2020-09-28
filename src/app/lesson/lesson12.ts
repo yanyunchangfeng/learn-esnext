@@ -110,3 +110,34 @@ let t1 = new Test();
 
 console.log(t1)//Test {a: "2", b: "5"}
 console.log(Test.a)//1
+
+import {makeWb,pinyin} from 'convert-zh-cn';
+// pinyin.getCamelChars()
+// console.log(pinyin)
+// {
+//     var keyword = document.getElementById('keyword');
+//     keyword.addEventListener('blur',()=>{
+//       console.log('blur')
+//         let  full = pinyin.ge(keyword['value'])
+//         let simple = pinyin.getCamelChars(keyword['value'])
+//         console.log(full,simple)
+//         var result = makeWb(keyword['value'])
+//         console.log(result)
+//     })
+// }
+
+
+var spArray = function(N,Q)
+{
+    var R = [],F;
+    for (F = 0;F < Q.length;) {
+        R.push(Q.slice(F,F += N))
+    }
+    return R
+}
+ 
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+console.log(spArray(5,arr))
+// ————————————————
+// 版权声明：本文为CSDN博主「sxs1995」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+// 原文链接：https://blog.csdn.net/sxs1995/java/article/details/85115689

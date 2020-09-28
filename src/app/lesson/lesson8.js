@@ -57,7 +57,18 @@
     }
 }
 {
-    //扩展运算符
+    //扩展运算符 扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。
     let {a,b,...c} = {a:'yycf',b:'yanyunchangfeng',c:'cfjwl',d:'cdymg'};
     console.log(c) //{c: "cfjwl", d: "cdymg"}
+}
+{
+    function handleClick(){
+        try{
+            throw new Error('something was wrong.')
+        }catch(error){
+             let state = {error}
+             console.log(state)
+        }
+    }
+    handleClick()
 }

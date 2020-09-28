@@ -178,7 +178,12 @@ import { async } from "q";
            yield user[key]
        }
    }
-   console.log(...user)//yycf 26
+//    console.log(...user)//yycf 26
+
+//    function test11(...user,c,b){
+//      console.log(user,c,b)
+//    }
+//    test11(...user,1)
 }
 // 5. for of 会在内部隐含使用迭代器Iterator，所以可以直接用for...of来便历generator函数
 

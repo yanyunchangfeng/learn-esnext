@@ -9,21 +9,22 @@
 // import './app/lesson/lesson9';      
 // import './app/lesson/lesson10';      
 // import './app/lesson/lesson11';      
-import './app/lesson/lesson12';      
+// import './app/lesson/lesson12';      
 // import './app/lesson/lesson13';      
 // import './app/lesson/lesson14';   
 // import './app/lesson/lesson15';     
 // import './app/lesson/lesson16';
-// import './app/lesson/lesson17';
+import './app/lesson/lesson18';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';
 // import './app/lesson/lesson18';
 // import{A,test ,Hello} from  './app/js/lesson/lesson17'; 
-// import * as lesson from './app/js/lesson/lesson17'
+// import * as lesson from './app/lesson/lesson17'
 // 问题1 假如一个模块有上百个变量 ，引入麻烦
 //问题2 假如只关心一个
 // import  lesson17 from './app/lesson/lesson17';
+// console.log(lesson.H)
 // test();  
 // console.log(A)   //456
 // console.log(test)   //ƒ test() {

@@ -119,3 +119,23 @@ import Img from '../../assets/img/yanyunchangfeng';
     ]).then(showImg)
 }
 
+
+import {makeWb,pinyin} from 'convert-zh-cn';
+
+console.log(pinyin)
+{
+    var keyword = document.getElementById('keyword');
+    keyword.addEventListener('blur',()=>{
+      console.log('blur')
+        let  full = pinyin.getFullChars(keyword['value'])
+        let simple = pinyin.getCamelChars(keyword['value'])
+        console.log(full,simple)
+        var result = makeWb(keyword['value'])
+        console.log(result)
+    })
+}
+
+/**
+ * 
+ * 
+ */
