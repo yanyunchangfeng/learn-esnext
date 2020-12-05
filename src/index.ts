@@ -14,11 +14,12 @@
 // import './app/lesson/lesson14';   
 // import './app/lesson/lesson15';     
 // import './app/lesson/lesson16';
-import './app/lesson/lesson18';
+// import './app/lesson/lesson18';
+import './app/lesson/lesson19';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';
-// import './app/lesson/lesson18';
+import './app/lesson/lesson18';
 // import{A,test ,Hello} from  './app/js/lesson/lesson17'; 
 // import * as lesson from './app/lesson/lesson17'
 // 问题1 假如一个模块有上百个变量 ，引入麻烦
@@ -43,13 +44,14 @@ import './app/lesson/lesson18';
 // console.log(lesson17.Hello)
 // console.log(lesson17)
 
+// const bigint1: bigint = 999999999999999999n;
 
-var i = 0;
+// var i = 0;
 
-class Example {
-    static prop = i++;
-}
-let e = new Example();
-// console.dir(e)
+// class Example {
+//     static prop = i++;
+// }
+// let e = new Example();
+// // console.dir(e)
 // console.dir(Example.prop=2)
 

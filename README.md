@@ -26,7 +26,8 @@
 15. [genertaor](src/app/lesson/lesson15.js)   
 16. [decorator](src/app/lesson/lesson16.ts)   
 17. [module](src/app/lesson/lesson17.js)   
-17. [async await](src/app/lesson/lesson18.ts)   
+18. [async await](src/app/lesson/lesson18.ts)   
+19. [BigInt](src/app/lesson/lesson19.ts)   
 
 ## Jest Unit 测试
 
