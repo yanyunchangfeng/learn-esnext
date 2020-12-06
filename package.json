@@ -1,7 +1,7 @@
 {
-  "name": "es6-7",
+  "name": "esnext",
   "version": "1.0.0",
-  "description": "this is es6-7 demo",
+  "description": "this is esnext demo",
   "main": "app/js/index.js",
   "scripts": {
     "start": "webpack-dev-server --env=dev ",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/yanyunchangfeng/es6-7.git"
+    "url": "https://gitee.com/yanyunchangfeng/esnext.git"
   },
   "author": "yanyunchangfeng <yanyunchangfeng@gmail.com>",
   "license": "MIT",
