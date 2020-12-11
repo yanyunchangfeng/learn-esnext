@@ -13,3 +13,21 @@ const bigint1 = 999999999999999999n;
 // 如何判断BigInt的数据类型  
 
 console.log(typeof theBiggestInt)
+
+// 运算
+// 以下操作符可以和 BigInt 、一起使用： +、`*`、`-`、`**`、`%` 。
+// 除 >>> （无符号右移）之外的 位操作 也可以支持。
+// 因为 BigInt 都是有符号的， >>> （无符号右移）不能用于 BigInt。为了兼容 asm.js ，BigInt 不支持单目 (+) 运算符。
+//let b  = +1n; //Operator '+' cannot be applied to type 'bigint'.ts(2736)
+let  a = -1n;
+console.log(a)
+
+
+// 比较
+// BigInt 和 Number 不是严格相等的，但是宽松相等的。
+
+// 0n === 0
+// // ↪ false
+
+// 0n == 0
+// // ↪ true
