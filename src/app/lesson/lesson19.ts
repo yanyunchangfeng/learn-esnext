@@ -31,3 +31,46 @@ console.log(a)
 
 // 0n == 0
 // // ↪ true
+console.log(Number(0n) == 0)
+let b:any = 0n;
+console.log(b === 0)
+
+// 条件
+if (0n) {
+  console.log('Hello from the if!');
+} else {
+  console.log('Hello from the else!');
+}
+
+// ↪ "Hello from the else!"
+
+console.log(0n || 12n)
+// ↪ 12n
+
+console.log(0n && 12n)
+// ↪ 0n
+
+console.log(Boolean(0n))
+// ↪ false
+
+console.log(Boolean(12n))
+// ↪ true
+
+console.log(!12n)
+// ↪ false
+
+console.log(!0n)
+// ↪ true
+// 静态方法
+// BigInt.asIntN(width, bigint)
+// 将 BigInt 值转换为一个 -2width-1 与 2width-1-1 之间的有符号整数。xxxxxx
+// width
+// 可存储整数的位数。
+// bigint
+// 要存储在指定位数上的整数。
+// 返回值
+// bigint 模(modulo) 2width 作为有符号整数的值。
+let an = BigInt.asIntN(40,559999999999n)
+console.log(an)
+// BigInt.asUintN()
+// 将一个 BigInt 值转换为 0 与 2width-1 之间的无符号整数。
