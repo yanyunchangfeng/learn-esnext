@@ -16,6 +16,7 @@ module.exports={
                 test:/\.ts$/,
                 loader:'ts-loader'
             }, 
+            { test: /\.less$/, use: ['style-loader', 'css-loader','less-loader'] }, 
             {
                 test: /\.(png|jpg|gif)$/i,
                 use: [

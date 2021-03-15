@@ -1,4 +1,5 @@
 // import './app/lesson/lesson1';
+import html2Canvas from 'html2canvas';
 // import './app/lesson/lesson2';      
 // import './app/lesson/lesson3';      
 // import './app/lesson/lesson4';      
@@ -15,11 +16,11 @@
 // import './app/lesson/lesson15';     
 // import './app/lesson/lesson16';
 // import './app/lesson/lesson18';
-import './app/lesson/lesson19';
+// import './app/lesson/lesson19';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';
-import './app/lesson/lesson18';
+// import './app/lesson/lesson18';
 // import{A,test ,Hello} from  './app/js/lesson/lesson17'; 
 // import * as lesson from './app/lesson/lesson17'
 // 问题1 假如一个模块有上百个变量 ，引入麻烦
@@ -55,3 +56,24 @@ import './app/lesson/lesson18';
 // // console.dir(e)
 // console.dir(Example.prop=2)
 
+import './index.less';
+
+interface window {
+  download:Function
+} 
+
+window['downloadCert'] = () => {
+  let certList = Array.from(document.querySelectorAll('.cert-container'));
+  certList.map((val:any) => {
+    html2Canvas(val, {useCORS: true, width:842,height:595, windowWidth: document.body.scrollWidth, windowHeight: document.body.scrollHeight, x: 0, y: window.pageYOffset })
+      .then(canvas => {
+        // document.body.appendChild(canvas)
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL();
+        link.setAttribute('download', '证书');
+        document.body.appendChild(link);
+        link.click()
+        document.body.removeChild(link)
+      })
+  })
+}
