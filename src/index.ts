@@ -58,10 +58,6 @@ import html2Canvas from 'html2canvas';
 
 import './index.less';
 
-interface window {
-  download:Function
-} 
-
 window['downloadCert'] = () => {
   let certList = Array.from(document.querySelectorAll('.cert-container'));
   certList.map((val:any) => {
