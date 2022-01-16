@@ -1,5 +1,5 @@
 // import './app/lesson/lesson1';
-import html2Canvas from 'html2canvas';
+// import html2Canvas from 'html2canvas';
 // import './app/lesson/lesson2';      
 // import './app/lesson/lesson3';      
 // import './app/lesson/lesson4';      
@@ -16,7 +16,9 @@ import html2Canvas from 'html2canvas';
 // import './app/lesson/lesson15';     
 // import './app/lesson/lesson16';
 // import './app/lesson/lesson18';
-// import './app/lesson/lesson19';
+// import './app/lesson/lesson20';
+// import './app/lesson/lesson21';
+import './app/lesson/lesson22';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';
@@ -56,20 +58,65 @@ import html2Canvas from 'html2canvas';
 // // console.dir(e)
 // console.dir(Example.prop=2)
 
-import './index.less';
+// import './index.less';
 
-window['downloadCert'] = () => {
-  let certList = Array.from(document.querySelectorAll('.cert-container'));
-  certList.map((val:any) => {
-    html2Canvas(val, {useCORS: true, width:842,height:595, windowWidth: document.body.scrollWidth, windowHeight: document.body.scrollHeight, x: 0, y: window.pageYOffset })
-      .then(canvas => {
-        // document.body.appendChild(canvas)
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL();
-        link.setAttribute('download', '证书');
-        document.body.appendChild(link);
-        link.click()
-        document.body.removeChild(link)
-      })
-  })
+// window['downloadCert'] = () => {
+//   let certList = Array.from(document.querySelectorAll('.cert-container'));
+//   certList.map((val:any) => {
+//     html2Canvas(val, {useCORS: true, width:842,height:595, windowWidth: document.body.scrollWidth, windowHeight: document.body.scrollHeight, x: 0, y: window.pageYOffset })
+//       .then(canvas => {
+//         // document.body.appendChild(canvas)
+//         const link = document.createElement('a');
+//         link.href = canvas.toDataURL();
+//         link.setAttribute('download', '证书');
+//         document.body.appendChild(link);
+//         link.click()
+//         document.body.removeChild(link)
+//       })
+//   })
+// }
+
+
+// const low = require('lowdb');
+
+// import lodash from 'lodash'
+// const path = require('path');
+// console.log(Low,JSONFile)
+// console.log("jianba ~🚀: JSONFile", JSONFile);
+// console.log("jianba ~🚀: Low", Low);
+
+
+
+let grpc = async () => {
+   return new Promise((res, rej) => {
+      setTimeout(() => {
+         console.log('我是grpc 调用')
+         res(1)
+      },3000)
+   })
 }
+
+let engine = async () => {
+   return new Promise((res, rej) => {
+      setTimeout(() => {
+         console.log('我是engine 调用')
+         res(1)
+      },3000)
+   })
+}
+
+let startthen = async () => {
+   grpc().then(() => {
+      console.log('grpc 调用完成')
+      engine()
+   })
+   console.log('11222222')
+}
+let startawait = async () => {
+   await grpc()
+   console.log('b')
+   await engine()
+   console.log('11222222')
+}
+startthen()
+// startawait()
