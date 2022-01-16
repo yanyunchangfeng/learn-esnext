@@ -30,6 +30,7 @@
 19. [BigInt](src/app/lesson/lesson19.ts)
 20. [requestAnimationFrame](src/app/lesson/lesson21.ts)
 21. [requestIdleCallback](src/app/lesson/lesson22.ts)
+22. [fiber](src/app/lesson/lesson23.ts)
 
 ## Jest Unit 测试
 

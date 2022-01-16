@@ -5,8 +5,11 @@
 // 然而如果到了超时时间了，就必须马上执行
 // window.requestIdleCallback(callback, { timeout: 1000 });
 const sleepDelay = (delay) => {
-    for (let start = Date.now(); Date.now() - start <= delay;){}
+    for (let start = Date.now(); Date.now() - start <= delay;);
 }
+// fiber是把整个任务分成很多个小任务，每次执行一个任务
+// 执行完成后会看看有没有剩余时间，如果有继续下一个任务，如果没有放弃执行，交给浏览器进行调度，等待下次执行
+let allStart = Date.now()
 let works = [
     () => {
         console.log('第1个任务开始')
@@ -22,6 +25,7 @@ let works = [
         console.log('第3个任务开始')
         sleepDelay(20)
         console.log('第3个任务结束')
+        console.log(Date.now() - allStart)
     }
 ]
 // deadline是一个对象 有两个属性
