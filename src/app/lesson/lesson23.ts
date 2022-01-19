@@ -17,9 +17,9 @@ class UpdateQueue{
     firstUpdate;
     lastUpdate;
     constructor() {
-        this.baseState = null;
-        this.firstUpdate = null;
-        this.lastUpdate = null;
+        this.baseState = null; // 原状态
+        this.firstUpdate = null; // 第一个更新
+        this.lastUpdate = null;// 最后一个更新
     }
     enqueueUpdate(update) {
         if (this.firstUpdate === null) {
@@ -32,7 +32,7 @@ class UpdateQueue{
     //获取老状态。然后遍历这个链表，进行更新
     forceUpdate() {
         let currentState = this.baseState || {} //初始状态
-        let currentUpdate = this.firstUpdate;
+        let currentUpdate = this.firstUpdate; // 刚开始来个指针 指向第一个更新
         while (currentUpdate) {
             let nextState = typeof currentUpdate.payload == 'function' ? currentUpdate.payload(currentState) : currentUpdate.payload
             currentState = { ...currentState, ...nextState };//使用当前更新得到新的状态

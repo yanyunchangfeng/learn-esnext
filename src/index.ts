@@ -19,7 +19,8 @@
 // import './app/lesson/lesson20';
 // import './app/lesson/lesson21';
 // import './app/lesson/lesson22';
-import './app/lesson/lesson23';
+// import './app/lesson/lesson23';
+import './app/lesson/lesson24';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';
@@ -88,36 +89,36 @@ import './app/lesson/lesson23';
 
 
 
-let grpc = async () => {
-   return new Promise((res, rej) => {
-      setTimeout(() => {
-         console.log('我是grpc 调用')
-         res(1)
-      },3000)
-   })
-}
+// let grpc = async () => {
+//    return new Promise((res, rej) => {
+//       setTimeout(() => {
+//          console.log('我是grpc 调用')
+//          res(1)
+//       },3000)
+//    })
+// }
 
-let engine = async () => {
-   return new Promise((res, rej) => {
-      setTimeout(() => {
-         console.log('我是engine 调用')
-         res(1)
-      },3000)
-   })
-}
+// let engine = async () => {
+//    return new Promise((res, rej) => {
+//       setTimeout(() => {
+//          console.log('我是engine 调用')
+//          res(1)
+//       },3000)
+//    })
+// }
 
-let startthen = async () => {
-   grpc().then(() => {
-      console.log('grpc 调用完成')
-      engine()
-   })
-   console.log('11222222')
-}
-let startawait = async () => {
-   await grpc()
-   console.log('b')
-   await engine()
-   console.log('11222222')
-}
-startthen()
+// let startthen = async () => {
+//    grpc().then(() => {
+//       console.log('grpc 调用完成')
+//       engine()
+//    })
+//    console.log('11222222')
+// }
+// let startawait = async () => {
+//    await grpc()
+//    console.log('b')
+//    await engine()
+//    console.log('11222222')
+// }
+// startthen()
 // startawait()

@@ -20,7 +20,7 @@
 9.  [Symbol 类型](src/app/lesson/lesson9.js)
 10. [Set Map WeakSet WeakMap](src/app/lesson/lesson10.js)
 11. [Proxy Reflect ](src/app/lesson/lesson11.js)
-12. [Class](src/app/lesson/lesson12.js)
+12. [Class](src/app/lesson/lesson12.ts)
 13. [Promise](src/app/lesson/lesson13.js)
 14. [Iterator 和 for ... of](src/app/lesson/lesson14.js)
 15. [genertaor](src/app/lesson/lesson15.js)
@@ -30,7 +30,8 @@
 19. [BigInt](src/app/lesson/lesson19.ts)
 20. [requestAnimationFrame](src/app/lesson/lesson21.ts)
 21. [requestIdleCallback](src/app/lesson/lesson22.ts)
-22. [fiber](src/app/lesson/lesson23.ts)
+22. [fiber UpdateQueue](src/app/lesson/lesson23.ts)
+23. [fiber linkList ](src/app/lesson/lesson24.ts)
 
 ## Jest Unit 测试
 

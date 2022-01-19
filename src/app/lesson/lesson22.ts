@@ -4,7 +4,8 @@
 // 我作为用户，告诉浏览器，我现在执行callback函数，但是它的优先级比较低，告诉浏览器，可以空闲的时候执行callback
 // 然而如果到了超时时间了，就必须马上执行
 // window.requestIdleCallback(callback, { timeout: 1000 });
-const sleepDelay = (delay) => {
+ // 永远不要在requestIdleCallback里面操作dom 因为会引起重新渲染
+export const sleepDelay = (delay) => {
     for (let start = Date.now(); Date.now() - start <= delay;);
 }
 // fiber是把整个任务分成很多个小任务，每次执行一个任务
