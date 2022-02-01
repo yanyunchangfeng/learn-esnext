@@ -8,7 +8,7 @@
 // import './app/lesson/lesson7';      
 // import './app/lesson/lesson8';      
 // import './app/lesson/lesson9';      
-// import './app/lesson/lesson10';      
+import './app/lesson/lesson10';      
 // import './app/lesson/lesson11';      
 // import './app/lesson/lesson12';      
 // import './app/lesson/lesson13';      
@@ -20,7 +20,7 @@
 // import './app/lesson/lesson21';
 // import './app/lesson/lesson22';
 // import './app/lesson/lesson23';
-import './app/lesson/lesson24';
+// import './app/lesson/lesson24';
 // import './app/lesson/lesson-m1';
 // import './app/lesson/lesson-m2';
 // import './app/lesson/lesson-m3';

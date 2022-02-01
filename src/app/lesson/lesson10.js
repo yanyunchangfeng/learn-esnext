@@ -254,7 +254,7 @@
     // 1.WeakSet 里面只能存对象，不能存其它东西
     // 2.WeakSet 里面的对象是弱引用，只要对象的引用为0，随时可能被垃圾收集器收回
     // 3.所以WeakSet是不可枚举的，他只有add()/delete()/has()3个方法 ，
-    // 因为里面的对象，有可能在枚举的过程中被收集掉了，这个时候回有诡异的现象发生，这是设计意图。
+    // 因为里面的对象，有可能在枚举的过程中被收集掉了，这个时候会有诡异的现象发生，这是设计意图。
     // 4.WeakSet 典型的应用场景是用来缓存DOM节点的引用
     // 因为我们用WeakSet来缓存这些DOM节点，
     // 将来在这些DOM节点不被使用的时候，不用担心说是不是有些地方还在持有引用，从而导致内存泄漏的情况。
@@ -288,3 +288,35 @@
 // 可以观察到arr置为null后被垃圾回收了
     },1000)
 }
+
+
+const deepClone = (obj,hash = new WeakMap()) => {
+    // 判断obj是undefined 还是null
+    if (obj == null) return obj;
+    
+    if (obj instanceof Date) return new Date(obj)
+    if (obj instanceof RegExp) return new RegExp(obj)
+  
+    if (typeof obj !== 'object') return obj // 不是对象就不用拷贝了
+     // 要不是数组 要不是对象
+    if (hash.has(obj)) return hash.get(obj); //如果weakMap中有对象就直接返回
+   
+    let cloneObj = new obj.constructor;
+    // 如果是对象把他放到weakMap中，如果在拷贝这个对象这个对象就存在了 直接返回这个对象即可
+    hash.set(obj,cloneObj)
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            cloneObj[key] = deepClone(obj[key],hash)
+        }
+    }
+    return cloneObj
+}
+
+let arr = [3, 5, 6, 5];
+let obj = { age: {name:'yycf'}};
+obj['xxx'] = obj;
+let newobj = deepClone(obj);
+console.log(newobj == obj, 'newobj == obj')
+console.log(newobj, 'newobj')
+
+export { }
