@@ -1,4 +1,4 @@
-// import './app/lesson/lesson1';
+import './app/lesson/lesson1';
 // import html2Canvas from 'html2canvas';
 // import './app/lesson/lesson2';      
 // import './app/lesson/lesson3';      
@@ -8,7 +8,7 @@
 // import './app/lesson/lesson7';      
 // import './app/lesson/lesson8';      
 // import './app/lesson/lesson9';      
-import './app/lesson/lesson10';      
+// import './app/lesson/lesson10';      
 // import './app/lesson/lesson11';      
 // import './app/lesson/lesson12';      
 // import './app/lesson/lesson13';      

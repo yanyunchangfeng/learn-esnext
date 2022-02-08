@@ -9,7 +9,7 @@
 
 ## 这是 es6 、es7 新增特性如下:
 
-1.  [let 和 const](src/app/lesson/lesson1.js)
+1.  [let 和 const](src/app/lesson/lesson1.ts)
 2.  [解构赋值](src/app/lesson/lesson2.js)
 3.  [正则的扩展](src/app/lesson/lesson3.js)
 4.  [字符串的扩展](src/app/lesson/lesson4.js)
