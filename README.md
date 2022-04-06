@@ -32,7 +32,8 @@
 * [requestIdleCallback](src/app/lesson22/index.ts)
 * [fiber UpdateQueue](src/app/lesson23/index.ts)
 * [fiber linkList ](src/app/lesson24/index.ts)
-* [ReflectMetadata](src/app/lesson25/index.ts) [Reflect Metadata md ](src/app/lesson25/Reflect.md)
+* [ReflectMetadata](src/app/lesson25/index.ts) [Reflect Metadata md ](src/app/lesson25/index.md)
+* [Ioc & DI](src/app/lesson26/index.ts) [Ioc&DI md ](src/app/lesson26/index.md)
 
 ## 我的个人博客
 
