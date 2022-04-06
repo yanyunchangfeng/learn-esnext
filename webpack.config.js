@@ -1,6 +1,4 @@
-module.exports = (env,config) =>{
-    console.log(env)
-    console.log(config)
-    // console.log(process.env)
+module.exports = (env, argv) => {
+    env = process.env.NODE_ENV === 'development' ? 'dev' : 'prod';
     return require(`./config/webpack.${env}`)
 }

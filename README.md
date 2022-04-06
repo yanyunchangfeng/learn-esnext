@@ -4,116 +4,39 @@
 
 ## 介绍
 
-你好，我是徐晓东，笔名[燕云长风](https://www.yanyunchangfeng.com)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
+你好，[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
 寓意：结合李白著名的边塞诗《关山月》取【燕云长风】—— 长风几万里，吹度玉门关。
 
-## 这是 es6 、es7 新增特性如下:
+## 这是 esnext 新增特性如下:
 
-1.  [let 和 const](src/app/lesson/lesson1.ts)
-2.  [解构赋值](src/app/lesson/lesson2.js)
-3.  [正则的扩展](src/app/lesson/lesson3.js)
-4.  [字符串的扩展](src/app/lesson/lesson4.js)
-5.  [Number 和 Math](src/app/lesson/lesson5.js)
-6.  [数组的扩展](src/app/lesson/lesson6.js)
-7.  [函数的扩展](src/app/lesson/lesson7.js)
-8.  [对象的扩展](src/app/lesson/lesson8.js)
-9.  [Symbol 类型](src/app/lesson/lesson9.js)
-10. [Set Map WeakSet WeakMap](src/app/lesson/lesson10.js)
-11. [Proxy Reflect ](src/app/lesson/lesson11.js)
-12. [Class](src/app/lesson/lesson12.ts)
-13. [Promise](src/app/lesson/lesson13.js)
-14. [Iterator 和 for ... of](src/app/lesson/lesson14.js)
-15. [genertaor](src/app/lesson/lesson15.js)
-16. [decorator](src/app/lesson/lesson16.ts)
-17. [module](src/app/lesson/lesson17.js)
-18. [async await](src/app/lesson/lesson18.ts)
-19. [BigInt](src/app/lesson/lesson19.ts)
-20. [requestAnimationFrame](src/app/lesson/lesson21.ts)
-21. [requestIdleCallback](src/app/lesson/lesson22.ts)
-22. [fiber UpdateQueue](src/app/lesson/lesson23.ts)
-23. [fiber linkList ](src/app/lesson/lesson24.ts)
-
-## Jest Unit 测试
-
-### 安装
-
-```
-   npm install --save-dev jest typescript ts-jest @types/jest  or yarn add --dev jest typescript ts-jest @types/jest
-```
-
-### 创建测试 ts 类型的配置文件 jest config file
-
-```
-   npx ts-jest config:init or  yarn ts-jest config:init
-```
-
-### 具体配置参数文档 请参照官网：
-
-- https://jestjs.io/docs/en/configuration.html
-
-### 运行 unit 测试
-
-```
-npm t  or yarn test
-```
-
-## cypress e2e 测试
-
-### 安装
-
-```
-  npm install cypress --save-dev or  yarn add cypress --dev
-```
-
-### 打开 cypress 测试
-
-```
-   npx cypress open  or  yarn run cypress open
-```
-
-### 添加 npm script in package.json
-
-```
-{
-  "scripts": {
-    "cypress:open": "cypress open"
-  }
-}
-
-```
-
-### typescript 文件测试,需在 cypress 目录文件夹下创建 tsconfig.json
-
-```
-{
-  "compilerOptions": {
-    "strict": true,
-    "baseUrl": "../node_modules",
-    "target": "es5",
-    "lib": ["es5", "dom"],
-    "types": ["cypress"]
-  },
-  "include": [
-    "**/*.ts"
-  ]
-}
-```
-
-### 创建测试文件需要在 cypress/integration 文件夹下创建
-
-```
-   touch {your_project}/cypress/integration/sample_spec.(j|t)s
-```
-
-### 运行 e2e 测试,选择指定文件进行测试
-
-```
-    npm run cypress:open
-```
+* [let 和 const](src/app/lesson1/index.ts/)
+* [解构赋值](src/app/lesson2/index.ts)
+* [正则的扩展](src/app/lesson3/index.ts)
+* [字符串的扩展](src/app/lesson4/index.ts)
+* [Number 和 Math](src/app/lesson5/index.ts)
+* [数组的扩展](src/app/lesson6/index.ts)
+* [函数的扩展](src/app/lesson7/index.ts)
+* [对象的扩展](src/app/lesson8/index.ts)
+* [Symbol 类型](src/app/lesson9/index.ts)
+* [Set Map WeakSet WeakMap](src/app/lesson10/index.ts)
+* [Proxy Reflect ](src/app/lesson11/index.ts)
+* [Class](src/app/lesson12/index.ts)
+* [Promise](src/app/lesson13/index.ts)
+* [Iterator 和 for ... of](src/app/lesson14/index.ts)
+* [genertaor](src/app/lesson15/index.ts)
+* [decorator](src/app/lesson16/index.ts)
+* [module](src/app/lesson17/index.ts)
+* [async await](src/app/lesson18/index.ts)
+* [BigInt](src/app/lesson19/index.ts)
+* [requestAnimationFrame](src/app/lesson21/index.ts)
+* [requestIdleCallback](src/app/lesson22/index.ts)
+* [fiber UpdateQueue](src/app/lesson23/index.ts)
+* [fiber linkList ](src/app/lesson24/index.ts)
+* [ReflectMetadata](src/app/lesson25/index.ts) [Reflect Metadata md ](src/app/lesson25/Reflect.md)
 
 ## 我的个人博客
 
-- [燕云长风](https://www.yanyunchangfeng.com)
+- [燕云长风](https://yanyunchangfeng.github.io)
 
 ## 我参与的系列项目
 
@@ -124,12 +47,9 @@ npm t  or yarn test
 
 ## 我的社交主页
 
-1. [燕云长风知乎](https://zhihu.com/people/hbxyxuxiaodong)
-2. [燕云长风知乎专栏](https://zhuanlan.zhihu.com/yanyunchangfeng)
-3. [燕云长风 github](https://github.com/yanyunchangfeng)
-4. [燕云长风 gitee](https://gitee.com/yanyunchangfeng)
-5. [燕云长风 twitter](https://twitter.com/yanyunchangfeng)
-6. [燕云长风 medium](https://medium.com/@yanyunchangfeng)
+* [燕云长风知乎](https://zhihu.com/people/hbxyxuxiaodong)
+* [燕云长风 github](https://github.com/yanyunchangfeng)
+* [燕云长风 gitee](https://gitee.com/yanyunchangfeng)
 
 ## 开源许可证
 

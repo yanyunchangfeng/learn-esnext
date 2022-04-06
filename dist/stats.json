@@ -1,0 +1,2037 @@
+{
+  "hash": "9c1ee176939ac0c4d075",
+  "version": "5.71.0",
+  "time": 1339,
+  "builtAt": 1649219379082,
+  "publicPath": "auto",
+  "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.dabc19109d1b44001e96.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "img/yanyunchangfeng.png",
+      "size": 339961,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/yanyunchangfeng.png",
+        "size": 339961
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": true
+    },
+    {
+      "type": "asset",
+      "name": "yanyunchangfeng.png",
+      "size": 339961,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 339961
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": true
+    },
+    {
+      "type": "asset",
+      "name": "img/cert-advanced.png",
+      "size": 87445,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/cert-advanced.png",
+        "size": 87445
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/cert-intermediate.png",
+      "size": 86882,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/cert-intermediate.png",
+        "size": 86882
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/cert-primary.png",
+      "size": 83656,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/cert-primary.png",
+        "size": 83656
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/octopus-bg.png",
+      "size": 33808,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/octopus-bg.png",
+        "size": 33808
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/zpf.png",
+      "size": 11059,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/zpf.png",
+        "size": 11059
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "738.b4afd187624d57b43d59.js",
+      "size": 9768,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "immutable": true,
+        "contenthash": "b4afd187624d57b43d59",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "738.b4afd187624d57b43d59.js.LICENSE.txt"
+        },
+        "size": 9768
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "license",
+          "name": "738.b4afd187624d57b43d59.js.LICENSE.txt",
+          "size": 836,
+          "emitted": true,
+          "comparedForEmit": false,
+          "cached": false,
+          "info": {
+            "extractedComments": true,
+            "size": 836
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        738
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": ".DS_Store",
+      "size": 6148,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/.DS_Store",
+        "size": 6148
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "main.dabc19109d1b44001e96.js",
+      "size": 2227,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "immutable": true,
+        "contenthash": "dabc19109d1b44001e96",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "main.dabc19109d1b44001e96.js.LICENSE.txt"
+        },
+        "size": 2227
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "license",
+          "name": "main.dabc19109d1b44001e96.js.LICENSE.txt",
+          "size": 36,
+          "emitted": true,
+          "comparedForEmit": false,
+          "cached": false,
+          "info": {
+            "extractedComments": true,
+            "size": 36
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        179
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/cert-left.png",
+      "size": 1166,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/cert-left.png",
+        "size": 1166
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "img/cert-right.png",
+      "size": 1130,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "copied": true,
+        "sourceFilename": "../assets/img/cert-right.png",
+        "size": 1130
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "index.html",
+      "size": 611,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 611
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 5925,
+      "sizes": {
+        "javascript": 3192,
+        "runtime": 2733
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.dabc19109d1b44001e96.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "34d9f43eae7e0b2d9165",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [
+        738
+      ],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 3192,
+          "sizes": {
+            "javascript": 3192
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts|dc12ee5d8aa802339cd750aa47ecbbef",
+          "name": "./index.ts + 1 modules",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 36,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.ts",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Cannot concat with ../../node_modules/reflect-metadata/Reflect.js: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 1141,
+              "sizes": {
+                "javascript": 1141
+              },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "name": "./index.ts",
+              "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 2,
+              "postOrderIndex": 2,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [],
+              "usedExports": [],
+              "providedExports": [],
+              "optimizationBailout": [
+                "Dependency (harmony side effect evaluation) with side effects at 23:0-26"
+              ],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 2051,
+              "sizes": {
+                "javascript": 2051
+              },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "name": "./lesson25/index.ts",
+              "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "issuerName": "./index.ts",
+              "issuerPath": [
+                {
+                  "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+                  "name": "./index.ts",
+                  "id": null
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+                  "module": "./index.ts",
+                  "moduleName": "./index.ts",
+                  "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+                  "resolvedModule": "./index.ts",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "src/app/lesson25",
+                  "loc": "23:0-26",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": [],
+              "providedExports": [],
+              "optimizationBailout": [
+                "Statement (VariableDeclaration) with side effects in source code at 1:0-6:2"
+              ],
+              "depth": 1
+            }
+          ]
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 886,
+          "sizes": {
+            "runtime": 886
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/chunk loaded",
+          "name": "webpack/runtime/chunk loaded",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 221,
+          "sizes": {
+            "runtime": 221
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/global",
+          "name": "webpack/runtime/global",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1538,
+          "sizes": {
+            "runtime": 1538
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/jsonp chunk loading",
+          "name": "webpack/runtime/jsonp chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.ts"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: vendors)",
+      "size": 51230,
+      "sizes": {
+        "javascript": 51230
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "738.b4afd187624d57b43d59.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "302b439d8165c930052e",
+      "childrenByOrder": {},
+      "id": 738,
+      "siblings": [
+        179
+      ],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 51230,
+          "sizes": {
+            "javascript": 51230
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/reflect-metadata/Reflect.js",
+          "name": "../../node_modules/reflect-metadata/Reflect.js",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/reflect-metadata/Reflect.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "issuerName": "./lesson25/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "name": "./index.ts",
+              "id": null
+            },
+            {
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "name": "./lesson25/index.ts",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 738,
+          "issuerId": null,
+          "chunks": [
+            738
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts|dc12ee5d8aa802339cd750aa47ecbbef",
+              "module": "./index.ts + 1 modules",
+              "moduleName": "./index.ts + 1 modules",
+              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "resolvedModule": "./lesson25/index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "reflect-metadata",
+              "loc": "7:0-26",
+              "moduleId": 36,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "module": "./lesson25/index.ts",
+              "moduleName": "./lesson25/index.ts",
+              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+              "resolvedModule": "./lesson25/index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "reflect-metadata",
+              "loc": "7:0-26",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 16:0-1131:30",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.ts"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/esm",
+      "layer": null,
+      "size": 3192,
+      "sizes": {
+        "javascript": 3192
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts|dc12ee5d8aa802339cd750aa47ecbbef",
+      "name": "./index.ts + 1 modules",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 36,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.ts",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Cannot concat with ../../node_modules/reflect-metadata/Reflect.js: Module is not an ECMAScript module"
+      ],
+      "depth": 0,
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 1141,
+          "sizes": {
+            "javascript": 1141
+          },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "name": "./index.ts",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 23:0-26"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 2051,
+          "sizes": {
+            "javascript": 2051
+          },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "name": "./lesson25/index.ts",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "issuerName": "./index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "name": "./index.ts",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "module": "./index.ts",
+              "moduleName": "./index.ts",
+              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+              "resolvedModule": "./index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "src/app/lesson25",
+              "loc": "23:0-26",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (VariableDeclaration) with side effects in source code at 1:0-6:2"
+          ],
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 2051,
+      "sizes": {
+        "javascript": 2051
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+      "name": "./lesson25/index.ts",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+      "issuerName": "./index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "name": "./index.ts",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "module": "./index.ts",
+          "moduleName": "./index.ts",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "resolvedModule": "./index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "src/app/lesson25",
+          "loc": "23:0-26",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (VariableDeclaration) with side effects in source code at 1:0-6:2"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 51230,
+      "sizes": {
+        "javascript": 51230
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/reflect-metadata/Reflect.js",
+      "name": "../../node_modules/reflect-metadata/Reflect.js",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/reflect-metadata/Reflect.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+      "issuerName": "./lesson25/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
+          "name": "./index.ts",
+          "id": null
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "name": "./lesson25/index.ts",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 738,
+      "issuerId": null,
+      "chunks": [
+        738
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts|dc12ee5d8aa802339cd750aa47ecbbef",
+          "module": "./index.ts + 1 modules",
+          "moduleName": "./index.ts + 1 modules",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "resolvedModule": "./lesson25/index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "reflect-metadata",
+          "loc": "7:0-26",
+          "moduleId": 36,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "module": "./lesson25/index.ts",
+          "moduleName": "./lesson25/index.ts",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson25/index.ts",
+          "resolvedModule": "./lesson25/index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "reflect-metadata",
+          "loc": "7:0-26",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 16:0-1131:30",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 886,
+      "sizes": {
+        "runtime": 886
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/chunk loaded",
+      "name": "webpack/runtime/chunk loaded",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 221,
+      "sizes": {
+        "runtime": 221
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/global",
+      "name": "webpack/runtime/global",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1538,
+      "sizes": {
+        "runtime": 1538
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/jsonp chunk loading",
+      "name": "webpack/runtime/jsonp chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        738,
+        179
+      ],
+      "assets": [
+        {
+          "name": "738.b4afd187624d57b43d59.js",
+          "size": 9768
+        },
+        {
+          "name": "main.dabc19109d1b44001e96.js",
+          "size": 2227
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 11995,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        738,
+        179
+      ],
+      "assets": [
+        {
+          "name": "738.b4afd187624d57b43d59.js",
+          "size": 9768
+        },
+        {
+          "name": "main.dabc19109d1b44001e96.js",
+          "size": 2227
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 11995,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [
+    {
+      "message": "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  img/yanyunchangfeng.png (332 KiB)\n  yanyunchangfeng.png (332 KiB)",
+      "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  img/yanyunchangfeng.png (332 KiB)\n  yanyunchangfeng.png (332 KiB)\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:134:7\n    at Hook.eval [as callAsync] (eval at create (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/neo-async/async.js:2818:7\n    at done (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/Compiler.js:736:33\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/graceful-fs/graceful-fs.js:143:16\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/graceful-fs/graceful-fs.js:61:14"
+    },
+    {
+      "message": "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/",
+      "stack": "NoAsyncChunksWarning: webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:21\n    at Hook.eval [as callAsync] (eval at create (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/neo-async/async.js:2818:7\n    at done (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/lib/Compiler.js:736:33\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/graceful-fs/graceful-fs.js:143:16\n    at /Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/graceful-fs/graceful-fs.js:61:14"
+    }
+  ],
+  "warningsCount": 2,
+  "children": [
+    {
+      "name": "HtmlWebpackCompiler",
+      "hash": "5cdd6a52c467c87219d5",
+      "version": "5.71.0",
+      "time": 371,
+      "builtAt": 1649219378150,
+      "publicPath": "",
+      "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 1625,
+          "sizes": {
+            "javascript": 603,
+            "runtime": 1022
+          },
+          "names": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "idHints": [],
+          "runtime": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "files": [],
+          "auxiliaryFiles": [],
+          "hash": "6053dbf3886dab44dabd",
+          "childrenByOrder": {},
+          "id": 563,
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 526,
+              "sizes": {
+                "javascript": 526
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+              "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": 796,
+              "issuerId": null,
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/esm",
+              "layer": null,
+              "size": 77,
+              "sizes": {
+                "javascript": 77
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": 163,
+              "issuerId": null,
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": [],
+              "providedExports": [],
+              "optimizationBailout": [
+                "Statement (ExpressionStatement) with side effects in source code at 1:0-77"
+              ],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 308,
+              "sizes": {
+                "runtime": 308
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/define property getters",
+              "name": "webpack/runtime/define property getters",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 88,
+              "sizes": {
+                "runtime": 88
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/hasOwnProperty shorthand",
+              "name": "webpack/runtime/hasOwnProperty shorthand",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 274,
+              "sizes": {
+                "runtime": 274
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/make namespace object",
+              "name": "webpack/runtime/make namespace object",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 27,
+              "sizes": {
+                "runtime": 27
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/publicPath",
+              "name": "webpack/runtime/publicPath",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 325,
+              "sizes": {
+                "runtime": 325
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/require chunk loading",
+              "name": "webpack/runtime/require chunk loading",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                563
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html"
+            },
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 77,
+          "sizes": {
+            "javascript": 77
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 163,
+          "issuerId": null,
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-77"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 526,
+          "sizes": {
+            "javascript": 526
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+          "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 796,
+          "issuerId": null,
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 27,
+          "sizes": {
+            "runtime": 27
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/publicPath",
+          "name": "webpack/runtime/publicPath",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 325,
+          "sizes": {
+            "runtime": 325
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/require chunk loading",
+          "name": "webpack/runtime/require chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "entrypoints": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            563
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    }
+  ]
+}
