@@ -1,7 +1,7 @@
 
 //Generator
 {
-    //genertaor基本定义
+    //generator基本定义
     let tell = function* () {
         yield 'a';
         yield 'b';
