@@ -21,7 +21,7 @@
 * [Set Map WeakSet WeakMap](src/app/lesson10/index.ts)
 * [Proxy Reflect ](src/app/lesson11/index.ts)
 * [Class](src/app/lesson12/index.ts)
-* [Promise](src/app/lesson13/index.ts) |[promisify promisifyAll & Promise.race ](src/app/lesson13/promisify.ts) |||[abort Promise](src/app/lesson13/abort.ts)
+* [Promise](src/app/lesson13/index.ts) |[promisify promisifyAll & Promise.race ](src/app/lesson13/promisify.ts) |[abort Promise](src/app/lesson13/abort.ts)
 * [Iterator 和 for ... of](src/app/lesson14/index.ts)
 * [generator](src/app/lesson15/index.ts) | [generator实现原理](src/app/lesson15/generator.ts)
 * [decorator](src/app/lesson16/index.ts)

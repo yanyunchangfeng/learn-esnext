@@ -20,7 +20,7 @@
 // import 'src/app/lesson22';
 // import 'src/app/lesson23';
 // import 'src/app/lesson24';
-import 'src/app/lesson25';
+import 'src/app/lesson15/generator';
 
 
 // import{A,test ,Hello} from  './app/js/lesson/lesson17';
