@@ -1,13 +1,13 @@
 {
-  "hash": "1de6381a3bdb58a72c4b",
+  "hash": "fe2c3b1d777baf606fe0",
   "version": "5.71.0",
-  "time": 63,
-  "builtAt": 1649398562561,
+  "time": 62,
+  "builtAt": 1649690483435,
   "publicPath": "auto",
   "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
   "assetsByChunkName": {
     "main": [
-      "main.54dace8f66f9c039bf78.js"
+      "main.8d8902ff1c5c0e11185f.js"
     ]
   },
   "assets": [
@@ -123,16 +123,16 @@
     },
     {
       "type": "asset",
-      "name": "main.54dace8f66f9c039bf78.js",
-      "size": 56092,
+      "name": "main.8d8902ff1c5c0e11185f.js",
+      "size": 56088,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "54dace8f66f9c039bf78",
+        "contenthash": "8d8902ff1c5c0e11185f",
         "javascriptModule": false,
-        "size": 56092
+        "size": 56088
       },
       "chunkNames": [
         "main"
@@ -291,10 +291,10 @@
         "main"
       ],
       "files": [
-        "main.54dace8f66f9c039bf78.js"
+        "main.8d8902ff1c5c0e11185f.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "b4fca21f62f801f792a1",
+      "hash": "ffc47dd3689bad3b0087",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -6402,12 +6402,12 @@
           "size": 472567
         },
         {
-          "name": "main.54dace8f66f9c039bf78.js",
-          "size": 56092
+          "name": "main.8d8902ff1c5c0e11185f.js",
+          "size": 56088
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 528659,
+      "assetsSize": 528655,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -6429,12 +6429,12 @@
           "size": 472567
         },
         {
-          "name": "main.54dace8f66f9c039bf78.js",
-          "size": 56092
+          "name": "main.8d8902ff1c5c0e11185f.js",
+          "size": 56088
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 528659,
+      "assetsSize": 528655,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,

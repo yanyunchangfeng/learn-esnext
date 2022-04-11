@@ -4,7 +4,7 @@
 
 ## 介绍
 
-你好，[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
+你好，我是[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
 寓意：结合李白著名的边塞诗《关山月》取【燕云长风】—— 长风几万里，吹度玉门关。
 
 ## 这是 esnext 新增特性如下:
@@ -26,7 +26,7 @@
 * [generator](src/app/lesson15/index.ts) | [generator实现原理](src/app/lesson15/generator.ts)
 * [decorator](src/app/lesson16/index.ts)
 * [module](src/app/lesson17/index.ts)
-* [async await](src/app/lesson18/index.ts)
+* [async + await = generator + co](src/app/lesson18/index.ts)
 * [BigInt](src/app/lesson19/index.ts)
 * [requestAnimationFrame](src/app/lesson21/index.ts)
 * [requestIdleCallback](src/app/lesson22/index.ts)
