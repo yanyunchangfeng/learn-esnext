@@ -1,13 +1,13 @@
 {
-  "hash": "fe2c3b1d777baf606fe0",
+  "hash": "6902a6a539150f6b583f",
   "version": "5.71.0",
-  "time": 62,
-  "builtAt": 1649690483435,
+  "time": 1050,
+  "builtAt": 1649731360601,
   "publicPath": "auto",
   "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
   "assetsByChunkName": {
     "main": [
-      "main.8d8902ff1c5c0e11185f.js"
+      "main.c07ae2b466b529c26a98.js"
     ]
   },
   "assets": [
@@ -15,9 +15,9 @@
       "type": "asset",
       "name": "vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-f7112b.60f3718b7cba65a36286.js",
       "size": 472567,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "immutable": true,
         "contenthash": "60f3718b7cba65a36286",
@@ -41,9 +41,9 @@
       "type": "asset",
       "name": "img/yanyunchangfeng.png",
       "size": 339961,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/yanyunchangfeng.png",
@@ -60,11 +60,30 @@
     },
     {
       "type": "asset",
+      "name": "yanyunchangfeng.png",
+      "size": 339961,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 339961
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "img/cert-advanced.png",
       "size": 87445,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/cert-advanced.png",
@@ -83,9 +102,9 @@
       "type": "asset",
       "name": "img/cert-intermediate.png",
       "size": 86882,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/cert-intermediate.png",
@@ -104,9 +123,9 @@
       "type": "asset",
       "name": "img/cert-primary.png",
       "size": 83656,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/cert-primary.png",
@@ -123,14 +142,14 @@
     },
     {
       "type": "asset",
-      "name": "main.8d8902ff1c5c0e11185f.js",
+      "name": "main.c07ae2b466b529c26a98.js",
       "size": 56088,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "8d8902ff1c5c0e11185f",
+        "contenthash": "c07ae2b466b529c26a98",
         "javascriptModule": false,
         "size": 56088
       },
@@ -151,9 +170,9 @@
       "type": "asset",
       "name": "img/octopus-bg.png",
       "size": 33808,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/octopus-bg.png",
@@ -172,9 +191,9 @@
       "type": "asset",
       "name": "img/zpf.png",
       "size": 11059,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/zpf.png",
@@ -193,9 +212,9 @@
       "type": "asset",
       "name": ".DS_Store",
       "size": 6148,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/.DS_Store",
@@ -214,9 +233,9 @@
       "type": "asset",
       "name": "img/cert-left.png",
       "size": 1166,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/cert-left.png",
@@ -235,9 +254,9 @@
       "type": "asset",
       "name": "img/cert-right.png",
       "size": 1130,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "copied": true,
         "sourceFilename": "../assets/img/cert-right.png",
@@ -274,14 +293,14 @@
   ],
   "chunks": [
     {
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": true,
       "recorded": false,
       "size": 32901,
       "sizes": {
-        "javascript": 3023,
-        "runtime": 29878
+        "runtime": 29878,
+        "javascript": 3023
       },
       "names": [
         "main"
@@ -291,10 +310,10 @@
         "main"
       ],
       "files": [
-        "main.8d8902ff1c5c0e11185f.js"
+        "main.c07ae2b466b529c26a98.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "ffc47dd3689bad3b0087",
+      "hash": "df47c90a4b70d06e09bc",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -311,10 +330,10 @@
           "sizes": {
             "javascript": 1151
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
           "name": "./index.ts",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
@@ -368,7 +387,7 @@
             "javascript": 1872
           },
           "built": true,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
           "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson15/generator.ts",
@@ -430,9 +449,9 @@
             "runtime": 886
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/chunk loaded",
           "name": "webpack/runtime/chunk loaded",
           "nameForCondition": null,
@@ -466,9 +485,9 @@
             "runtime": 267
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/compat get default export",
           "name": "webpack/runtime/compat get default export",
           "nameForCondition": null,
@@ -502,9 +521,9 @@
             "runtime": 308
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/define property getters",
           "name": "webpack/runtime/define property getters",
           "nameForCondition": null,
@@ -538,9 +557,9 @@
             "runtime": 209
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/get javascript update chunk filename",
           "name": "webpack/runtime/get javascript update chunk filename",
           "nameForCondition": null,
@@ -574,9 +593,9 @@
             "runtime": 90
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/get update manifest filename",
           "name": "webpack/runtime/get update manifest filename",
           "nameForCondition": null,
@@ -610,9 +629,9 @@
             "runtime": 54
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/getFullHash",
           "name": "webpack/runtime/getFullHash",
           "nameForCondition": null,
@@ -646,9 +665,9 @@
             "runtime": 221
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/global",
           "name": "webpack/runtime/global",
           "nameForCondition": null,
@@ -682,9 +701,9 @@
             "runtime": 88
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/hasOwnProperty shorthand",
           "name": "webpack/runtime/hasOwnProperty shorthand",
           "nameForCondition": null,
@@ -718,9 +737,9 @@
             "runtime": 9347
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/hot module replacement",
           "name": "webpack/runtime/hot module replacement",
           "nameForCondition": null,
@@ -754,9 +773,9 @@
             "runtime": 15868
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/jsonp chunk loading",
           "name": "webpack/runtime/jsonp chunk loading",
           "nameForCondition": null,
@@ -790,9 +809,9 @@
             "runtime": 1399
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/load script",
           "name": "webpack/runtime/load script",
           "nameForCondition": null,
@@ -826,9 +845,9 @@
             "runtime": 274
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/make namespace object",
           "name": "webpack/runtime/make namespace object",
           "nameForCondition": null,
@@ -862,9 +881,9 @@
             "runtime": 867
           },
           "built": false,
-          "codeGenerated": false,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "webpack/runtime/publicPath",
           "name": "webpack/runtime/publicPath",
           "nameForCondition": null,
@@ -915,7 +934,7 @@
       ]
     },
     {
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": false,
       "recorded": false,
@@ -952,10 +971,10 @@
           "sizes": {
             "javascript": 4262
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ansi-html-community/index.js",
           "name": "../../node_modules/ansi-html-community/index.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ansi-html-community/index.js",
@@ -1050,7 +1069,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 3:0-14"
+          ],
           "depth": 2
         },
         {
@@ -1061,10 +1082,10 @@
           "sizes": {
             "javascript": 14890
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/events/events.js",
           "name": "../../node_modules/events/events.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/events/events.js",
@@ -1131,7 +1152,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 56:0-14"
+          ],
           "depth": 2
         },
         {
@@ -1142,10 +1165,10 @@
           "sizes": {
             "javascript": 7923
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/index.js",
           "name": "../../node_modules/html-entities/lib/index.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/index.js",
@@ -1240,7 +1263,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: this is used directly at 2:16-20"
+          ],
           "depth": 2
         },
         {
@@ -1251,10 +1276,10 @@
           "sizes": {
             "javascript": 74412
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/named-references.js",
           "name": "../../node_modules/html-entities/lib/named-references.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/named-references.js",
@@ -1327,10 +1352,10 @@
           "sizes": {
             "javascript": 339
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/numeric-unicode-map.js",
           "name": "../../node_modules/html-entities/lib/numeric-unicode-map.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/numeric-unicode-map.js",
@@ -1402,10 +1427,10 @@
           "sizes": {
             "javascript": 537
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/surrogate-pairs.js",
           "name": "../../node_modules/html-entities/lib/surrogate-pairs.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/surrogate-pairs.js",
@@ -1480,10 +1505,10 @@
           "sizes": {
             "javascript": 1757
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
           "name": "../../node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
@@ -1619,10 +1644,10 @@
           "sizes": {
             "javascript": 6740
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10",
           "name": "../../node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/index.js",
@@ -1674,10 +1699,10 @@
           "sizes": {
             "javascript": 26135
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/modules/logger/index.js",
           "name": "../../node_modules/webpack-dev-server/client/modules/logger/index.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/modules/logger/index.js",
@@ -1772,7 +1797,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: exports is used directly at 824:32-39"
+          ],
           "depth": 2
         },
         {
@@ -1783,10 +1810,10 @@
           "sizes": {
             "javascript": 6706
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/overlay.js",
           "name": "../../node_modules/webpack-dev-server/client/overlay.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/overlay.js",
@@ -1965,10 +1992,10 @@
           "sizes": {
             "javascript": 2033
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/socket.js",
           "name": "../../node_modules/webpack-dev-server/client/socket.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/socket.js",
@@ -2046,10 +2073,10 @@
           "sizes": {
             "javascript": 4375
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/createSocketURL.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/createSocketURL.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/createSocketURL.js",
@@ -2126,10 +2153,10 @@
           "sizes": {
             "javascript": 868
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
@@ -2211,10 +2238,10 @@
           "sizes": {
             "javascript": 548
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/log.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/log.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/log.js",
@@ -2601,10 +2628,10 @@
           "sizes": {
             "javascript": 1280
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/parseURL.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/parseURL.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/parseURL.js",
@@ -2681,10 +2708,10 @@
           "sizes": {
             "javascript": 2094
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/reloadApp.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/reloadApp.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/reloadApp.js",
@@ -2775,10 +2802,10 @@
           "sizes": {
             "javascript": 436
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/sendMessage.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/sendMessage.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/sendMessage.js",
@@ -2939,10 +2966,10 @@
           "sizes": {
             "javascript": 692
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/stripAnsi.js",
           "name": "../../node_modules/webpack-dev-server/client/utils/stripAnsi.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/stripAnsi.js",
@@ -3033,10 +3060,10 @@
           "sizes": {
             "javascript": 1629
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/dev-server.js",
           "name": "../../node_modules/webpack/hot/dev-server.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/dev-server.js",
@@ -3088,10 +3115,10 @@
           "sizes": {
             "javascript": 75
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/emitter.js",
           "name": "../../node_modules/webpack/hot/emitter.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/emitter.js",
@@ -3181,7 +3208,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 2:0-14"
+          ],
           "depth": 1
         },
         {
@@ -3192,10 +3221,10 @@
           "sizes": {
             "javascript": 1320
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log-apply-result.js",
           "name": "../../node_modules/webpack/hot/log-apply-result.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log-apply-result.js",
@@ -3257,7 +3286,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 5:0-14"
+          ],
           "depth": 1
         },
         {
@@ -3268,10 +3299,10 @@
           "sizes": {
             "javascript": 1376
           },
-          "built": false,
-          "codeGenerated": false,
+          "built": true,
+          "codeGenerated": true,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log.js",
           "name": "../../node_modules/webpack/hot/log.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log.js",
@@ -3375,7 +3406,9 @@
           ],
           "usedExports": null,
           "providedExports": null,
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 21:0-14"
+          ],
           "depth": 1
         }
       ],
@@ -3413,10 +3446,10 @@
       "sizes": {
         "javascript": 6740
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10",
       "name": "../../node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/index.js",
@@ -3467,10 +3500,10 @@
       "sizes": {
         "javascript": 1629
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/dev-server.js",
       "name": "../../node_modules/webpack/hot/dev-server.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/dev-server.js",
@@ -3521,10 +3554,10 @@
       "sizes": {
         "javascript": 1151
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
       "name": "./index.ts",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
@@ -3576,10 +3609,10 @@
       "sizes": {
         "javascript": 1376
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log.js",
       "name": "../../node_modules/webpack/hot/log.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log.js",
@@ -3682,7 +3715,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 21:0-14"
+      ],
       "depth": 1
     },
     {
@@ -3693,10 +3728,10 @@
       "sizes": {
         "javascript": 692
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/stripAnsi.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/stripAnsi.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/stripAnsi.js",
@@ -3786,10 +3821,10 @@
       "sizes": {
         "javascript": 1280
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/parseURL.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/parseURL.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/parseURL.js",
@@ -3865,10 +3900,10 @@
       "sizes": {
         "javascript": 2033
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/socket.js",
       "name": "../../node_modules/webpack-dev-server/client/socket.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/socket.js",
@@ -3945,10 +3980,10 @@
       "sizes": {
         "javascript": 548
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/log.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/log.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/log.js",
@@ -4334,10 +4369,10 @@
       "sizes": {
         "javascript": 6706
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/overlay.js",
       "name": "../../node_modules/webpack-dev-server/client/overlay.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/overlay.js",
@@ -4515,10 +4550,10 @@
       "sizes": {
         "javascript": 436
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/sendMessage.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/sendMessage.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/sendMessage.js",
@@ -4678,10 +4713,10 @@
       "sizes": {
         "javascript": 2094
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/reloadApp.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/reloadApp.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/reloadApp.js",
@@ -4771,10 +4806,10 @@
       "sizes": {
         "javascript": 75
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/emitter.js",
       "name": "../../node_modules/webpack/hot/emitter.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/emitter.js",
@@ -4863,7 +4898,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 2:0-14"
+      ],
       "depth": 1
     },
     {
@@ -4874,10 +4911,10 @@
       "sizes": {
         "javascript": 4375
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/createSocketURL.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/createSocketURL.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/createSocketURL.js",
@@ -4953,10 +4990,10 @@
       "sizes": {
         "javascript": 1320
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log-apply-result.js",
       "name": "../../node_modules/webpack/hot/log-apply-result.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack/hot/log-apply-result.js",
@@ -5017,7 +5054,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 5:0-14"
+      ],
       "depth": 1
     },
     {
@@ -5029,7 +5068,7 @@
         "javascript": 1872
       },
       "built": true,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
       "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson15/generator.ts",
@@ -5089,10 +5128,10 @@
       "sizes": {
         "javascript": 868
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
       "name": "../../node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
@@ -5173,10 +5212,10 @@
       "sizes": {
         "javascript": 1757
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
       "name": "../../node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/clients/WebSocketClient.js",
@@ -5311,10 +5350,10 @@
       "sizes": {
         "javascript": 26135
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/modules/logger/index.js",
       "name": "../../node_modules/webpack-dev-server/client/modules/logger/index.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/webpack-dev-server/client/modules/logger/index.js",
@@ -5408,7 +5447,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: exports is used directly at 824:32-39"
+      ],
       "depth": 2
     },
     {
@@ -5419,10 +5460,10 @@
       "sizes": {
         "javascript": 4262
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ansi-html-community/index.js",
       "name": "../../node_modules/ansi-html-community/index.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ansi-html-community/index.js",
@@ -5516,7 +5557,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 3:0-14"
+      ],
       "depth": 2
     },
     {
@@ -5527,10 +5570,10 @@
       "sizes": {
         "javascript": 7923
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/index.js",
       "name": "../../node_modules/html-entities/lib/index.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/index.js",
@@ -5624,7 +5667,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: this is used directly at 2:16-20"
+      ],
       "depth": 2
     },
     {
@@ -5635,10 +5680,10 @@
       "sizes": {
         "javascript": 14890
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/events/events.js",
       "name": "../../node_modules/events/events.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/events/events.js",
@@ -5704,7 +5749,9 @@
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [],
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 56:0-14"
+      ],
       "depth": 2
     },
     {
@@ -5715,10 +5762,10 @@
       "sizes": {
         "javascript": 74412
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/named-references.js",
       "name": "../../node_modules/html-entities/lib/named-references.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/named-references.js",
@@ -5790,10 +5837,10 @@
       "sizes": {
         "javascript": 339
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/numeric-unicode-map.js",
       "name": "../../node_modules/html-entities/lib/numeric-unicode-map.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/numeric-unicode-map.js",
@@ -5864,10 +5911,10 @@
       "sizes": {
         "javascript": 537
       },
-      "built": false,
-      "codeGenerated": false,
+      "built": true,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/surrogate-pairs.js",
       "name": "../../node_modules/html-entities/lib/surrogate-pairs.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-entities/lib/surrogate-pairs.js",
@@ -5942,9 +5989,9 @@
         "runtime": 886
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/chunk loaded",
       "name": "webpack/runtime/chunk loaded",
       "nameForCondition": null,
@@ -5977,9 +6024,9 @@
         "runtime": 267
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/compat get default export",
       "name": "webpack/runtime/compat get default export",
       "nameForCondition": null,
@@ -6012,9 +6059,9 @@
         "runtime": 308
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/define property getters",
       "name": "webpack/runtime/define property getters",
       "nameForCondition": null,
@@ -6047,9 +6094,9 @@
         "runtime": 209
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/get javascript update chunk filename",
       "name": "webpack/runtime/get javascript update chunk filename",
       "nameForCondition": null,
@@ -6082,9 +6129,9 @@
         "runtime": 90
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/get update manifest filename",
       "name": "webpack/runtime/get update manifest filename",
       "nameForCondition": null,
@@ -6117,9 +6164,9 @@
         "runtime": 54
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/getFullHash",
       "name": "webpack/runtime/getFullHash",
       "nameForCondition": null,
@@ -6152,9 +6199,9 @@
         "runtime": 221
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/global",
       "name": "webpack/runtime/global",
       "nameForCondition": null,
@@ -6187,9 +6234,9 @@
         "runtime": 88
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/hasOwnProperty shorthand",
       "name": "webpack/runtime/hasOwnProperty shorthand",
       "nameForCondition": null,
@@ -6222,9 +6269,9 @@
         "runtime": 9347
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/hot module replacement",
       "name": "webpack/runtime/hot module replacement",
       "nameForCondition": null,
@@ -6257,9 +6304,9 @@
         "runtime": 15868
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/jsonp chunk loading",
       "name": "webpack/runtime/jsonp chunk loading",
       "nameForCondition": null,
@@ -6292,9 +6339,9 @@
         "runtime": 1399
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/load script",
       "name": "webpack/runtime/load script",
       "nameForCondition": null,
@@ -6327,9 +6374,9 @@
         "runtime": 274
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/make namespace object",
       "name": "webpack/runtime/make namespace object",
       "nameForCondition": null,
@@ -6362,9 +6409,9 @@
         "runtime": 867
       },
       "built": false,
-      "codeGenerated": false,
+      "codeGenerated": true,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "webpack/runtime/publicPath",
       "name": "webpack/runtime/publicPath",
       "nameForCondition": null,
@@ -6402,7 +6449,7 @@
           "size": 472567
         },
         {
-          "name": "main.8d8902ff1c5c0e11185f.js",
+          "name": "main.c07ae2b466b529c26a98.js",
           "size": 56088
         }
       ],
@@ -6429,7 +6476,7 @@
           "size": 472567
         },
         {
-          "name": "main.8d8902ff1c5c0e11185f.js",
+          "name": "main.c07ae2b466b529c26a98.js",
           "size": 56088
         }
       ],
@@ -6447,5 +6494,711 @@
   "errorsCount": 0,
   "warnings": [],
   "warningsCount": 0,
-  "children": []
+  "children": [
+    {
+      "name": "HtmlWebpackCompiler",
+      "hash": "558935c13ef7372a0c49",
+      "version": "5.71.0",
+      "time": 711,
+      "builtAt": 1649731360308,
+      "publicPath": "",
+      "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 1645,
+          "sizes": {
+            "javascript": 603,
+            "runtime": 1042
+          },
+          "names": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "idHints": [],
+          "runtime": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "files": [],
+          "auxiliaryFiles": [],
+          "hash": "64d97ff650202cde0f2d",
+          "childrenByOrder": {},
+          "id": "HtmlWebpackPlugin_0-0",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 526,
+              "sizes": {
+                "javascript": 526
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+              "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+              "issuerId": null,
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/esm",
+              "layer": null,
+              "size": 77,
+              "sizes": {
+                "javascript": 77
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "issuerId": null,
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": [],
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 308,
+              "sizes": {
+                "runtime": 308
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/define property getters",
+              "name": "webpack/runtime/define property getters",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 88,
+              "sizes": {
+                "runtime": 88
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/hasOwnProperty shorthand",
+              "name": "webpack/runtime/hasOwnProperty shorthand",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 274,
+              "sizes": {
+                "runtime": 274
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/make namespace object",
+              "name": "webpack/runtime/make namespace object",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 27,
+              "sizes": {
+                "runtime": 27
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/publicPath",
+              "name": "webpack/runtime/publicPath",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 345,
+              "sizes": {
+                "runtime": 345
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/require chunk loading",
+              "name": "webpack/runtime/require chunk loading",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "HtmlWebpackPlugin_0-0"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html"
+            },
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 77,
+          "sizes": {
+            "javascript": 77
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "issuerId": null,
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 526,
+          "sizes": {
+            "javascript": 526
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+          "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
+          "issuerId": null,
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/esnext/src/index.temp.html",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 27,
+          "sizes": {
+            "runtime": 27
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/publicPath",
+          "name": "webpack/runtime/publicPath",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 345,
+          "sizes": {
+            "runtime": 345
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/require chunk loading",
+          "name": "webpack/runtime/require chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "entrypoints": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    }
+  ]
 }
