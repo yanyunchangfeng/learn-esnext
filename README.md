@@ -34,7 +34,7 @@
 * [fiber linkList ](src/app/lesson24/index.ts)
 * [ReflectMetadata](src/app/lesson25/index.ts) |[Reflect Metadata md ](src/app/lesson25/index.md)
 * [Ioc & DI](src/app/lesson26/index.ts) |[Ioc&DI md ](src/app/lesson26/index.md)
-* [eventLoop](src/app/lesson27/index.ts) 
+* [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts)
 
 ## 我的个人博客
 

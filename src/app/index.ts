@@ -20,7 +20,9 @@
 // import 'src/app/lesson22';
 // import 'src/app/lesson23';
 // import 'src/app/lesson24';
-import 'src/app/lesson15/generator';
+// import 'src/app/lesson15/generator';
+import 'src/app/lesson27/eventLoop';
+// import 'src/app/lesson27/eventLoopRender';
 
 
 // import{A,test ,Hello} from  './app/js/lesson/lesson17';
