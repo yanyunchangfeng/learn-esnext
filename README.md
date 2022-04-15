@@ -21,7 +21,7 @@
 * [Set Map WeakSet WeakMap](src/app/lesson10/index.ts)
 * [Proxy Reflect ](src/app/lesson11/index.ts)
 * [Class](src/app/lesson12/index.ts)
-* [Promise](src/app/lesson13/index.ts) |[promisify promisifyAll & Promise.race ](src/app/lesson13/promisify.ts) |[abort Promise](src/app/lesson13/abort.ts)
+* [Promise](src/app/lesson13/index.ts) |[promisify promisifyAll & Promise.race ](src/app/lesson13/promisify.ts) |[abort Promise](src/app/lesson13/abort.ts) 
 * [Iterator 和 for ... of](src/app/lesson14/index.ts)
 * [generator](src/app/lesson15/index.ts) | [generator实现原理](src/app/lesson15/generator.ts)
 * [decorator](src/app/lesson16/index.ts)
@@ -34,7 +34,7 @@
 * [fiber linkList ](src/app/lesson24/index.ts)
 * [ReflectMetadata](src/app/lesson25/index.ts) |[Reflect Metadata md ](src/app/lesson25/index.md)
 * [Ioc & DI](src/app/lesson26/index.ts) |[Ioc&DI md ](src/app/lesson26/index.md)
-* [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts)
+* [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts)  | [eventLoopReview](src/app/lesson27/eventLoopReview.ts)
 
 ## 我的个人博客
 

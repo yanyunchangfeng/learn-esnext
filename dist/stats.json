@@ -1,13 +1,13 @@
 {
-  "hash": "6fc533f9b4386944ef6b",
+  "hash": "d1ec0450add981dc5ab3",
   "version": "5.71.0",
-  "time": 134,
-  "builtAt": 1649817075142,
+  "time": 26,
+  "builtAt": 1649993561236,
   "publicPath": "auto",
   "outputPath": "/Users/yanyunchangfeng/Documents/webproject/esnext/dist",
   "assetsByChunkName": {
     "main": [
-      "main.743ef105666087cac72b.js"
+      "main.24c6b7ad82f8540269c1.js"
     ]
   },
   "assets": [
@@ -123,16 +123,16 @@
     },
     {
       "type": "asset",
-      "name": "main.743ef105666087cac72b.js",
-      "size": 52746,
+      "name": "main.24c6b7ad82f8540269c1.js",
+      "size": 54387,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "743ef105666087cac72b",
+        "contenthash": "24c6b7ad82f8540269c1",
         "javascriptModule": false,
-        "size": 52746
+        "size": 54387
       },
       "chunkNames": [
         "main"
@@ -278,9 +278,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 31618,
+      "size": 32027,
       "sizes": {
-        "javascript": 1740,
+        "javascript": 2149,
         "runtime": 29878
       },
       "names": [
@@ -291,10 +291,10 @@
         "main"
       ],
       "files": [
-        "main.743ef105666087cac72b.js"
+        "main.24c6b7ad82f8540269c1.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "a8fa6cd4e8e946d9ce5f",
+      "hash": "eebda9a879f0086a9c9b",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -307,14 +307,14 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 1237,
+          "size": 1283,
           "sizes": {
-            "javascript": 1237
+            "javascript": 1283
           },
-          "built": false,
+          "built": true,
           "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": true,
+          "cached": false,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
           "name": "./index.ts",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
@@ -363,17 +363,17 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 503,
+          "size": 866,
           "sizes": {
-            "javascript": 503
+            "javascript": 866
           },
-          "built": true,
+          "built": false,
           "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopRender.ts",
-          "name": "./lesson27/eventLoopRender.ts",
-          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopRender.ts",
+          "cached": true,
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopReview.ts",
+          "name": "./lesson27/eventLoopReview.ts",
+          "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopReview.ts",
           "index": 23,
           "preOrderIndex": 23,
           "index2": 22,
@@ -394,7 +394,7 @@
           "failed": false,
           "errors": 0,
           "warnings": 0,
-          "id": "./lesson27/eventLoopRender.ts",
+          "id": "./lesson27/eventLoopReview.ts",
           "issuerId": "./index.ts",
           "chunks": [
             "main"
@@ -410,7 +410,7 @@
               "type": "harmony side effect evaluation",
               "active": true,
               "explanation": "",
-              "userRequest": "src/app/lesson27/eventLoopRender",
+              "userRequest": "src/app/lesson27/eventLoopReview",
               "loc": "25:0-42",
               "moduleId": "./index.ts",
               "resolvedModuleId": "./index.ts"
@@ -3517,14 +3517,14 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 1237,
+      "size": 1283,
       "sizes": {
-        "javascript": 1237
+        "javascript": 1283
       },
-      "built": false,
+      "built": true,
       "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": true,
+      "cached": false,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
       "name": "./index.ts",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/index.ts",
@@ -5024,17 +5024,17 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 503,
+      "size": 866,
       "sizes": {
-        "javascript": 503
+        "javascript": 866
       },
-      "built": true,
+      "built": false,
       "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopRender.ts",
-      "name": "./lesson27/eventLoopRender.ts",
-      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopRender.ts",
+      "cached": true,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/esnext/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopReview.ts",
+      "name": "./lesson27/eventLoopReview.ts",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/esnext/src/app/lesson27/eventLoopReview.ts",
       "index": 23,
       "preOrderIndex": 23,
       "index2": 22,
@@ -5054,7 +5054,7 @@
       "failed": false,
       "errors": 0,
       "warnings": 0,
-      "id": "./lesson27/eventLoopRender.ts",
+      "id": "./lesson27/eventLoopReview.ts",
       "issuerId": "./index.ts",
       "chunks": [
         "main"
@@ -5070,7 +5070,7 @@
           "type": "harmony side effect evaluation",
           "active": true,
           "explanation": "",
-          "userRequest": "src/app/lesson27/eventLoopRender",
+          "userRequest": "src/app/lesson27/eventLoopReview",
           "loc": "25:0-42",
           "moduleId": "./index.ts",
           "resolvedModuleId": "./index.ts"
@@ -6402,12 +6402,12 @@
           "size": 472567
         },
         {
-          "name": "main.743ef105666087cac72b.js",
-          "size": 52746
+          "name": "main.24c6b7ad82f8540269c1.js",
+          "size": 54387
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 525313,
+      "assetsSize": 526954,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -6429,12 +6429,12 @@
           "size": 472567
         },
         {
-          "name": "main.743ef105666087cac72b.js",
-          "size": 52746
+          "name": "main.24c6b7ad82f8540269c1.js",
+          "size": 54387
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 525313,
+      "assetsSize": 526954,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
