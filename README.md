@@ -36,6 +36,7 @@
 * [Ioc & DI](src/app/lesson26/index.ts) |[Ioc&DI md ](src/app/lesson26/index.md)
 * [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts)  | [eventLoopReview](src/app/lesson27/eventLoopReview.ts)
 * [node eventLoop](src/app/lesson28/index.ts) 
+* [highOrderFunction](src/app//lesson29/index.ts)| [curring](src/app/lesson29/curring.ts)
 
 ## 我的个人博客
 
