@@ -1,0 +1,2 @@
+/*! For license information please see main.b353394c4ea43a3e4f9c.js.LICENSE.txt */
+(()=>{"use strict";var o;console.log({a:3,b:4}),function(o){o.Up="UP",o.Down="DOWN",o.Left="LEFT",o.Right="RIGHT"}(o||(o={})),"UP"===o.Up&&console.log("go up!")})();

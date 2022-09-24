@@ -1,4 +1,4 @@
-// import 'src/app/lesson1';
+import "src/app/lesson1";
 // import 'src/app/lesson2';
 // import 'src/app/lesson3';
 // import 'src/app/lesson4';
@@ -25,8 +25,7 @@
 // import 'src/app/lesson27/eventLoopReview';
 // import 'src/app/lesson27/eventLoopRender';
 // import 'src/app/lesson29';
-import 'src/app/lesson29/curring';
-
+// import 'src/app/lesson29/curring';
 
 // import{A,test ,Hello} from  './app/js/lesson/lesson17';
 // import * as lesson from 'src/app/lesson17'
@@ -37,10 +36,10 @@ import 'src/app/lesson29/curring';
 // test();
 // console.log(A)   //456
 // console.log(test)   //ƒ test() {
-   // A = 456;
- // }
+// A = 456;
+// }
 // console.log(Hello)  //ƒ Hello() {
-    // _classCallCheck(this, Hello);
+// _classCallCheck(this, Hello);
 //   }
 
 // console.log(lesson)
