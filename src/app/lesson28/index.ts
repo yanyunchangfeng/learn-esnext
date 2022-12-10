@@ -10,30 +10,31 @@
 
 // 根据性能影响 执行的顺序会有所不同
 setImmediate(() => {
-    console.log('immediate')
-})
+  console.log("immediate");
+});
 setTimeout(() => {
-    console.log('timeout')
-}, 0)
+  console.log("timeout");
+}, 0);
 
-const fs = require('fs')
-const path = require('path')
-fs.readFile(path.join(__dirname, 'index.ts'), () => { // i/o 轮训时会执行i/o回调 如果没有定义setImmediate 会等待剩下的i/o 完成 或者定时器到达时间
-    setTimeout(() => {
-        console.log('timeout')
-    })
-    setImmediate(() => {
-        console.log('immediate')
-    })
-    // 先输出immediate 再输出timeout
-})
+// const fs = require('fs')
+// const path = require('path')
+// fs.readFile(path.join(__dirname, 'index.ts'), () => { // i/o 轮训时会执行i/o回调 如果没有定义setImmediate 会等待剩下的i/o 完成 或者定时器到达时间
+//     setTimeout(() => {
+//         console.log('timeout')
+//     })
+//     setImmediate(() => {
+//         console.log('immediate')
+//     })
+//     // 先输出immediate 再输出timeout
+// })
 
 Promise.resolve().then(() => {
-    console.log('promise')
-})
-process.nextTick(() => {  // 当前执行栈中执行完毕后 立即调用的 （微任务）
-    console.log('nextTick')
-})
+  console.log("promise");
+});
+process.nextTick(() => {
+  // 当前执行栈中执行完毕后 立即调用的 （微任务）
+  console.log("nextTick");
+});
 
 // timer 和 setImmediate 调用时机不同
 // process.nextTick 当前同步代码执行完毕后 立即调用的 微任务

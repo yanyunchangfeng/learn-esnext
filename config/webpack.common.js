@@ -227,8 +227,8 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin({
       typescript: {
         diagnosticOptions: {
-          syntactic: false,
-          semantic: false,
+          syntactic: true,
+          semantic: true,
           declaration: false,
           global: false,
         },

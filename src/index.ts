@@ -1,4 +1,4 @@
-import "src/app/lesson1";
+// import "src/app/lesson1";
 // import 'src/app/lesson2';
 // import 'src/app/lesson3';
 // import 'src/app/lesson4';
@@ -43,3 +43,5 @@ import "src/app/lesson1";
 //   }
 
 // console.log(lesson)
+
+import "src/app/ioc/index.spec";

@@ -2,7 +2,7 @@
   "name": "esnext",
   "version": "1.0.0",
   "description": "this is esnext ",
-  "main": "app/js/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
     "start-analyzer": "cross-env NODE_ENV=development ANALYZE=1  webpack serve",
