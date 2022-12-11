@@ -20,7 +20,7 @@ var __decorate = function (decorators, target, key, desc) {
     if (decorator) {
       decoratorTarget =
         argsLength < 3
-          ? decorators(decoratorTarget)
+          ? decorator(decoratorTarget)
           : argsLength > 3
           ? decorator(target, key, decoratorTarget)
           : decorator(target, key) || decoratorTarget;
@@ -31,7 +31,7 @@ var __decorate = function (decorators, target, key, desc) {
     argsLength > 3 &&
       decoratorTarget &&
       Object.defineProperty(target, key, decoratorTarget),
-    decorateTarget
+    decoratorTarget
   );
 };
 
