@@ -41,7 +41,7 @@
 * [fiber UpdateQueue](src/app/lesson23/index.ts)
 * [fiber linkList ](src/app/lesson24/index.ts)
 * [Reflect Metadata](src/app/lesson25/index.ts) | [Reflect Metadata md ](src/app/lesson25/index.md)
-* [Ioc & DI](src/app/lesson26/index.ts)   |  [Ioc&DI md ](src/app/lesson26/index.md)  |  [__metadata/装饰器](src/app/ioc/index.ts)   |  [ioc Container](src/app/ioc/container.ts) | [ioc Provider](src/app/ioc/provider.ts)  |  [ioc Inject](src/app/ioc/inject.ts)  |  [ioc Injectable](src/app/ioc/injectable.ts)  |  [ioc spec](src/app/ioc/index.spec.ts)  |  [ioc reflect ts](src/app/reflect/index.ts)  |  [ioc reflect js](src/app/reflect/index.js)  |  [ioc reflect editjs](src/app/reflect/editindex.js) 
+* [Ioc & DI](src/app/lesson26/index.ts)   |  [Ioc&DI md ](src/app/lesson26/index.md)  |  [__metadata/装饰器](src/app/ioc/index.ts)   |  [ioc Container](src/app/ioc/container.ts) | [ioc Provider](src/app/ioc/provider.ts)  |  [ioc Inject](src/app/ioc/inject.ts)  |  [ioc Injectable](src/app/ioc/injectable.ts)  |  [ioc spec](src/app/ioc/index.spec.ts)  |  [ioc reflect ts](src/app/reflect/index.ts)  |  [ioc reflect js](src/app/reflect/index.js)  |  [ioc reflect editjs](src/app/reflect/editIndex.js) 
 * [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts) | [eventLoopReview](src/app/lesson27/eventLoopReview.ts)
 * [node eventLoop](src/app/lesson28/index.ts) 
 * [highOrderFunction](src/app//lesson29/index.ts) | [curring](src/app/lesson29/curring.ts)
