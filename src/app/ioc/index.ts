@@ -3,7 +3,7 @@ export * from "./container";
 //4.4 __metadata
 // ._decorate:执行装饰器的函数，被执行的装饰器分为四类，类装饰器、参数装饰器、方法装饰器，还有一类特殊的装饰器是ts编译选项 emitDecoratorMetadata 生成的装饰器，
 //     用来定义一些特殊元数据design:paramtypes等，这些特殊元数据可以获取编译之前的类型信息
-//  . 参数类型元数据使用元数据键"design:type"
+//  . 类型元数据使用元数据键"design:type"
 //  . 参数类型元数据使用元数据键"design:paramtypes"
 //  . 返回值类型元数据使用元数据键"design:returntype"
 
