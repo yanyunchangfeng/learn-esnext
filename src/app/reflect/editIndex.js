@@ -109,6 +109,12 @@ GirlFriend = __decorate(
 console.log(GirlFriend);
 console.log(Reflect.getMetadata(METADATA_INJECT_KEY, GirlFriend, "index-1")); //InjectionToken { injectionIdentifier: 'house' }
 // console.log(Reflect.getMetadata("index-1",GirlFriend)); //InjectionToken { injectionIdentifier: 'house' }
-console.log(Reflect.getMetadata("design:type", GirlFriend)); // 返回类型本身GrilFriend
-console.log(Reflect.getMetadata("design:paramtypes", GirlFriend)); //参数类型列表
-console.log(Reflect.getMetadata("design:returntype", GirlFriend)); //返回值的类型
+console.log("design:type", Reflect.getMetadata("design:type", GirlFriend)); // 返回类型本身GrilFriend
+console.log(
+  "design:paramtypes",
+  Reflect.getMetadata("design:paramtypes", GirlFriend)
+); //参数类型列表
+console.log(
+  "design:returntype",
+  Reflect.getMetadata("design:returntype", GirlFriend)
+); //返回值的类型

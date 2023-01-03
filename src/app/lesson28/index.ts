@@ -1,44 +1,27 @@
-// process.nextTick()
+// 高阶函数的概念： 1. 一个函数返回一个函数  2.一个函数可以参数接受一个函数 高阶函数
+// 这两个条件满足任何一个就是高阶函数 promise内部肯定也是回调函数 (内部包含着高阶函数)
 
-// 1. node 基于v8引擎的 libuv库提供的(非阻塞i/o)
-// 同步代码执行完毕后 再执行异步代码
-// node中也有一个自己的事件环 包含了i/o 操作  从node10以上都和浏览器的执行顺序一致
+// 装饰器模式 （对原本的功能进行包装）
+// 扩展方法 会用到高阶函数
+function core(a, b, c) { // 核心代码
+    // todo...
+    console.log('core .......', a, b, c)
+}
+// 给core函数增加一些额外的逻辑 但是不能更改核心代码
+// 每个类都有一个原型，所有实例都有一个属性__proto__
+Function.prototype.before = function (beforeFn) {
+    // this = core 
+    return (...args) => {// newCore  剩余运算符 可以把多个参数转化成数组     箭头函数中没有this 没有arguments 没有prototype
+        beforeFn() 
+        this(...args)// 拓展运算符
+    }
+}
+let newCore = core.before(() => {
+    console.log('core before')
+})
+newCore(1, 2, 4)
 
-// -> timers setInterval 定时器
-// -> poll 阶段 轮询 会在特定的时候进行阻塞 执行i/o 回调
-// -> check setImmediate (每个宏任务执行完毕后都会清空微任务)
 
-// 根据性能影响 执行的顺序会有所不同
-setImmediate(() => {
-  console.log("immediate");
-});
-setTimeout(() => {
-  console.log("timeout");
-}, 0);
+// 闭包 1） 定义函数的作用域 和调用的作用域不是同一个
 
-// const fs = require('fs')
-// const path = require('path')
-// fs.readFile(path.join(__dirname, 'index.ts'), () => { // i/o 轮训时会执行i/o回调 如果没有定义setImmediate 会等待剩下的i/o 完成 或者定时器到达时间
-//     setTimeout(() => {
-//         console.log('timeout')
-//     })
-//     setImmediate(() => {
-//         console.log('immediate')
-//     })
-//     // 先输出immediate 再输出timeout
-// })
-
-Promise.resolve().then(() => {
-  console.log("promise");
-});
-process.nextTick(() => {
-  // 当前执行栈中执行完毕后 立即调用的 （微任务）
-  console.log("nextTick");
-});
-
-// timer 和 setImmediate 调用时机不同
-// process.nextTick 当前同步代码执行完毕后 立即调用的 微任务
-// i/o文件读写自动会放到poll阶段中处理
-// setImmediate 用的非常少
-
-// poll 里面有很多回调 node中有执行的最大个数，超过最大个数会被延迟到下一轮循环执行
+// 1.如果我们想给函数进行扩展 可以使用高阶函数

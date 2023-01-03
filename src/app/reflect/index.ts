@@ -32,6 +32,11 @@ function Inject(token: Token<any>) {
     return target;
   };
 }
+function f() {
+  return function (target, key, descriptor: PropertyDescriptor) {
+    console.log(descriptor.value.length);
+  };
+}
 class House {}
 class GirlFriend {
   // 是构造函数，因为构造函数是属于类的，类似于静态函数
@@ -39,6 +44,14 @@ class GirlFriend {
     private car: Car,
     @Inject(new InjectionToken("house")) private house: House
   ) {}
+  @f()
+  cook(): string {
+    return "线椒土豆丝";
+  }
 }
 console.log(GirlFriend);
 console.log(Reflect.getMetadata(METADATA_INJECT_KEY, GirlFriend, "index-1")); //InjectionToken { injectionIdentifier: 'house' }
+console.log(
+  "design:returntype",
+  Reflect.getMetadata("design:returntype", GirlFriend.prototype, "cook")
+); //返回值的类型 design:returntype [Function: String]
