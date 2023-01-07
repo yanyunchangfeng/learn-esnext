@@ -44,6 +44,6 @@ container.addProvider({
 });
 container.addProvider({ provide: GirlFriend, useClass: GirlFriend });
 // console.log(container.providers);
-//inject注入，就是根据token创建对应的值
+//inject注入，就是根据token创建对应的值/实例
 let girlFriend = container.inject(GirlFriend);
 console.log(girlFriend);

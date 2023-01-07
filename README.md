@@ -17,7 +17,7 @@
 ```  
 ## 这是 esnext 新增特性如下:
 
-* [let 和 const](src/app/lesson1/index.ts/)
+* [let 和 const](src/app/lesson1/index.ts)
 * [解构赋值](src/app/lesson2/index.ts)
 * [正则的扩展](src/app/lesson3/index.ts)
 * [字符串的扩展](src/app/lesson4/index.ts)
@@ -41,7 +41,7 @@
 * [fiber UpdateQueue](src/app/lesson23/index.ts)
 * [fiber linkList ](src/app/lesson24/index.ts)
 * [Reflect Metadata](src/app/lesson25/index.ts) | [Reflect Metadata md ](src/app/lesson25/index.md)
-* [Ioc & DI](src/app/lesson26/index.ts)   |  [Ioc&DI md ](src/app/lesson26/index.md)  |  [__metadata/装饰器](src/app/ioc/index.ts)   |  [ioc Container](src/app/ioc/container.ts) | [ioc Provider](src/app/ioc/provider.ts)  |  [ioc Inject](src/app/ioc/inject.ts)  |  [ioc Injectable](src/app/ioc/injectable.ts)  |  [ioc spec](src/app/ioc/index.spec.ts)  |  [ioc reflect ts](src/app/reflect/index.ts)  |  [ioc reflect js](src/app/reflect/index.js)  |  [ioc reflect originjs](src/app/reflect/originIndex.js)  ||  [ioc reflect editjs](src/app/reflect/editIndex.js) 
+* [Ioc & DI](src/app/lesson26/index.ts)   |  [Ioc&DI md ](src/app/lesson26/index.md)  |  [__metadata/装饰器](src/app/ioc/index.ts)   |  [ioc Container](src/app/ioc/container.ts) | [ioc Provider](src/app/ioc/provider.ts)  |  [ioc Inject](src/app/ioc/inject.ts)  |  [ioc Injectable](src/app/ioc/injectable.ts)  |  [ioc spec](src/app/ioc/index.spec.ts)  |  [ioc reflect ts](src/app/reflect/index.ts)  |  [ioc reflect js](src/app/reflect/index.js)  |  [ioc reflect originjs](src/app/reflect/originIndex.js)  | [ioc reflect editjs](src/app/reflect/editIndex.js) 
 * [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts) | [eventLoopReview](src/app/lesson27/eventLoopReview.ts)
 * [highOrderFunction](src/app//lesson28/index.ts) | [curring](src/app/lesson28/curring.ts)
 

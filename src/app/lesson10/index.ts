@@ -75,33 +75,72 @@
   // weakList.add(1)//报错 基础类型的值无效
 }
 {
-  //map 的key 可以是任意类型
+  // map的key可以是任意类型
   let map = new Map();
   let arr = ["123"];
   map.set(arr, 9);
-  console.log(map);
-  console.log("map", map, map.get(arr)); //map 9
-  map.forEach((item) => console.log("map", item));
+  console.log("map", map.get(arr)); //map 9
 }
 {
+  // Map实例 会维护键值对的插入顺序，因此可以根据插入顺序执行迭代操作。
+  // 映射实例可以提供一个迭代器(Iterator),能以插入顺序生成[key,value]形式的数组。可以通过entries()方法(或者Symbol.iterator属性，它引用entries())取得这个迭代器
   let map = new Map([
     ["a", 123],
     ["b", 456],
   ]);
-  console.log("map args", map); //map args Map(2) {"a" => 123, "b" => 456}size: (...)__proto__: Map[[Entries]]: Array(2)0: {"a" => 123}1: {"b" => 456}length: 2
   console.log("size", map.size); // size 2
-  // console.log('delete',map.delete('a'),map)
-  // console.log('clear',map.clear(),map)
+  console.log(map.entries === map[Symbol.iterator]); // true
+  for (let pair of map.entries()) {
+    console.log(pair); //  ['a', 123]  ['b', 456]
+  }
+  for (let pair of map[Symbol.iterator]()) {
+    console.log(pair); //  ['a', 123]  ['b', 456]
+  }
+  // 因为entries()是默认迭代器，所以可以直接对映射实例使用扩展操作，把映射转换为数组
+  console.log([...map]); // [ ['a', 123],  ['b', 456] ]
+  // 不使用迭代器，而是使用回调方式 ，则可以调用映射的forEach
+  map.forEach((val, key) => console.log(val, key)); // 123 'a' 456 'b'
+  // keys()和values() 分别返回已插入顺序生成键和值的迭代器
+  // 键和值在迭代器遍历时是可以修改的，但映射内部的引用则无法修改。当然，这并不妨碍修改作为键或值的对象内部的属性，因为这样并不影响他们在映射实例中的身份：
+  for (let key of map.keys()) {
+    console.log(key); // a b
+  }
+  for (let value of map.values()) {
+    console.log(value); // 123 456
+  }
+  const keyObj = {
+    id: 1,
+  };
+  let m1 = new Map([[keyObj, "val1"]]);
+  for (let key of m1.keys()) {
+    key.id = 5;
+    console.log(key); // { id:5}
+    console.log(m1.get(keyObj)); // val1
+  }
+  console.log(keyObj); // { id:5}
 }
 {
-  //1.key值必须是对象
-  //没有size ，不能使用clear
-  //不能便历
+  // 没有size ，不能使用clear, 不能便历
+  //    WeakMap是Map的“兄弟”类型，其API也是Map的子集， WeakMap中的weak(弱)，描述的是javascript垃圾回收程序对待“弱映射”中键的方式
   let weakmap = new WeakMap();
-  let o = {};
+  let o = {}; // 弱映射中的键只能是Object或者继承自Object类型
   weakmap.set(o, 4);
-  console.log(weakmap);
   console.log(weakmap.get(o)); //4
+  // 弱键 “weak”表示弱映射的键是“弱弱地拿着”的。意思就是，这些键不属于正式的引用，不会阻止垃圾回收。
+  // 但要注意的是，弱映射中值的引用可不是“弱弱地拿着”的。只要键存在，键/值对就会存在于映射中，并被当作对值的引用，因此就不会被当作垃圾回收。
+  const wm = new WeakMap();
+  wm.set({}, "val");
+  setTimeout(() => console.log("wm", wm), 5000); // 引用消失
+
+  const container = {
+    key: {},
+  };
+  const wm1 = new WeakMap();
+  wm1.set(container.key, "val");
+  function removeReference() {
+    container.key = null;
+  }
+  // 调用removeReference(),就会被垃圾回收
 }
 
 {
@@ -113,15 +152,6 @@
   map.set("t", 1);
   arr.push({ t: 1 });
   console.info(map, arr);
-  // Map(1) {"t" => 1}
-  //size: (...)
-  //__proto__: Map
-  //[[Entries]]: Array(1)
-  //0: {"t" => 1}
-  //key: "t"
-  //value: 1
-  //length: 1
-
   //查
   let map_exist = map.has("t");
   let arr_exist = arr.find((item) => item.t);
@@ -148,13 +178,6 @@
   set.add(obj);
   arr.push(obj);
   console.log("set-arr-add", set, arr);
-  //Set(1) {{…}}
-  //size: (...)
-  //__proto__: Set
-  //[[Entries]]: Array(1)
-  //0:
-  //value: {t: 1}
-  //length: 1
 
   //查
   let set_exist = set.has(obj); //方法一样
@@ -265,22 +288,22 @@
   ws2.add(arr);
   let now,
     start = new Date().getTime();
-  setInterval(() => {
-    console.log(ws2);
-    now = new Date().getTime();
+  // setInterval(() => {
+  // console.log(ws2);
+  // now = new Date().getTime();
 
-    if (now - start >= 5000) {
-      arr = null;
-    }
-    console.log(ws2.has(arr));
-    // WeakSet {Window, Array(0)} true
-    //  WeakSet {Window, Array(0)} true
-    //  WeakSet {Window, Array(0)} true
-    //  WeakSet {Window, Array(0)} true
-    //  WeakSet {Window, Array(0)} true
-    //  WeakSet {Window}  false .....
-    // 可以观察到arr置为null后被垃圾回收了
-  }, 1000);
+  // if (now - start >= 5000) {
+  //   arr = null;
+  // }
+  // console.log(ws2.has(arr));
+  // WeakSet {Window, Array(0)} true
+  //  WeakSet {Window, Array(0)} true
+  //  WeakSet {Window, Array(0)} true
+  //  WeakSet {Window, Array(0)} true
+  //  WeakSet {Window, Array(0)} true
+  //  WeakSet {Window}  false .....
+  // 可以观察到arr置为null后被垃圾回收了
+  // }, 1000);
 }
 
 const deepClone = (obj, hash = new WeakMap()) => {
