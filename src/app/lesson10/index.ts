@@ -1,10 +1,38 @@
 // Set Map WeakSet WeakMap
 
 {
-  let list = new Set();
-  list.add(5);
-  list.add(7);
-  console.log(list.size); //2
+  // Set会维护值插入时的顺序，因此支持按顺序迭代。
+  // 集合实例可以提供一个迭代器(Iterator),能以插入顺序生成集合内容。
+  // 可以通过values()方法及其别名方法keys() (或者Symbol.iterator属性，它引用values())取得这个迭代器
+  let s = new Set(["val1", "val2", "val3"]);
+  console.log(s.keys === s[Symbol.iterator]); //true
+  console.log(s.values === s[Symbol.iterator]); //true
+  for (let key of s.keys()) {
+    console.log(key); // val1 val2 val3
+  }
+  for (let value of s.values()) {
+    console.log(value); // val1 val2 val3
+  }
+  for (let value of s[Symbol.iterator]()) {
+    console.log(value); // val1 val2 val3
+  }
+  // 集合的entries()方法返回一个迭代器，可以按照插入顺序产生包含两个元素的数组，这两个元素是集合中每个值的重复出现。
+  for (let value of s.entries()) {
+    console.log(value); // ["val1","val1"]  ["val2","val2"] ["val3","val3"]
+  }
+  s.forEach((val, key, set) => console.log(val, key, set));
+  // "val1" "val1"  "val2" "val2" "val3" "val3"
+  // 因为values()是默认迭代器，所以可以直接对集合实例使用扩展操作，把集合转化为数组。
+  console.log([...s]);
+  // 修改值对象的属性，但对象仍然存在于集合中
+  const valObj = { id: 1 };
+  const s2 = new Set([valObj]);
+  for (let value of s2.values()) {
+    value.id = 6;
+    console.log(value); // {id:6}
+    console.log(s2.has(valObj)); // true
+  }
+  console.log(valObj); // {id:6}
 }
 {
   let arr = [1, 2, 3, 4, 5];
