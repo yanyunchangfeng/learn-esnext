@@ -87,8 +87,8 @@
     });
   };
   let pull = function () {
-    let genertaor = ajax();
-    let step: any = genertaor.next();
+    let generator = ajax();
+    let step: any = generator.next();
     step.value.then(function (d) {
       if (d.code != 0) {
         setTimeout(function () {

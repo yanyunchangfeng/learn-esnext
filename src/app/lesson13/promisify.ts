@@ -1,5 +1,17 @@
 const fs = require("fs");
 const path = require("path");
+
+function fn(arg, callback) {
+  setTimeout(() => {
+    let random = Math.random();
+    if (random > 0.5) {
+      callback(undefined, arg);
+    } else {
+      callback("error", undefined);
+    }
+  }, 1000);
+}
+
 const promisify = (fn) => {
   // 高阶函数
   return function (...args) {

@@ -55,7 +55,7 @@ function _asyncToGenerator(fn) {
     return new Promise((res, rej) => {
       function step(key, arg?) {
         try {
-          var { value, done } = genFn(key)(arg);
+          var { value, done } = genFn[key](arg);
         } catch (err) {
           return rej(err);
         }
@@ -76,3 +76,5 @@ function _asyncToGenerator(fn) {
     });
   };
 }
+
+export {};
