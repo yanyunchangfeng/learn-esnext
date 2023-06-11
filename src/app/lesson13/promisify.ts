@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-function fn(arg, callback) {
+function fn(arg: any, callback: Function) {
   setTimeout(() => {
     let random = Math.random();
     if (random > 0.5) {
@@ -12,19 +12,19 @@ function fn(arg, callback) {
   }, 1000);
 }
 
-const promisify = (fn) => {
+const promisify = (fn: Function) => {
   // 高阶函数
-  return function (...args) {
+  return function (...args: any[]) {
     return new Promise((res, rej) => {
-      fn(...args, (err, data) => {
+      fn(...args, (err: any, data: any) => {
         if (err) return rej(err);
         res(data);
       });
     });
   };
 };
-const promisifyAll = (target) => {
-  Reflect.ownKeys(target).forEach((key: string) => {
+const promisifyAll = (target: any) => {
+  Reflect.ownKeys(target).forEach((key: any) => {
     if (typeof target[key] === "function")
       target[`${key}Async`] = promisify(target[key]);
   });

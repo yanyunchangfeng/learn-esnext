@@ -1,14 +1,14 @@
 // abort方法就是不要promise这次成功的结果了
 // 超时处理
 
-let p1: any = new Promise((res, rej) => {
+let p1 = new Promise((res, rej) => {
   setTimeout(() => res("success"), 3000);
 });
 
-const wrap = (p1) => {
+const wrap = (p1: Promise<any>) => {
   // p1 是用户的，我在内部再构建一个promise和用户传入的组成一对
   let abort: any;
-  let p2: any = new Promise((res, rej) => {
+  let p2 = new Promise((res, rej) => {
     // 空的promise 没有任何含义
     abort = rej;
   });
@@ -16,15 +16,15 @@ const wrap = (p1) => {
   newP.abort = abort;
   return newP;
 };
-let p2 = wrap(p1);
+let p2: any = wrap(p1);
 
 setTimeout(() => {
   p2.abort("取消"); // 如果超过两秒就让这个promise失败掉
 }, 2000);
 
-p2.then((data) => {
+p2.then((data: any) => {
   console.log(data, "data");
-}).catch((err) => {
+}).catch((err: any) => {
   console.log(err, "err");
 });
 

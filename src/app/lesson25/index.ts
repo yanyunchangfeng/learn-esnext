@@ -8,14 +8,14 @@ console.dir(target);
 console.log(Reflect.getOwnMetadata("name", target));
 console.log(Reflect.getOwnMetadata("name", target, "yycf"));
 
-function classMetadata(key, value) {
+function classMetadata<T>(key: string, value: T) {
   return function (target: typeof Person) {
     Reflect.defineMetadata(key, value, target);
   };
 }
-function methodMetadata(key, value) {
+function methodMetadata<T>(key: string, value: T) {
   // target类的原型
-  return function (target: InstanceType<typeof Person>, propertyName) {
+  return function (target: InstanceType<typeof Person>, propertyName: string) {
     // Person.prototype.hello.name = 'yanyunchengfeng'
     Reflect.defineMetadata(key, value, target, propertyName);
   };

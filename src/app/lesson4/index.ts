@@ -14,7 +14,7 @@
   console.log(s.charCodeAt(1)); //57271
 
   console.log(s.codePointAt(0)); //取四个字节 134071
-  console.log(s.codePointAt(0).toString(16)); //取四个字节 //20bb7
+  console.log(s.codePointAt(0)!.toString(16)); //取四个字节 //20bb7
   console.log(s.codePointAt(1)); //57271   取'𠮷'后两个字节
   console.log(s.codePointAt(2)); //97
 }
@@ -71,7 +71,7 @@
   console.log(abc`I am${user.name}${user.info}`); //I am,,yycfcfjwl,cdymg
   //两个作用 1.防止xss 攻击
   //做多语言的国际化
-  function abc(s, v1, v2) {
+  function abc(s: TemplateStringsArray, v1: string, v2: string) {
     console.log(s);
     console.log(String(s)); // I am,,
     console.log(v1); //yycf

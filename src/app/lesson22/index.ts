@@ -4,7 +4,7 @@
 // 然而如果到了超时时间了，就必须马上执行
 // window.requestIdleCallback(callback, { timeout: 1000 });
 // 永远不要在requestIdleCallback里面操作dom 因为会引起重新渲染
-export const sleepDelay = (delay) => {
+export const sleepDelay = (delay: number) => {
   for (let start = Date.now(); Date.now() - start <= delay; );
 };
 // fiber是把整个任务分成很多个小任务，每次执行一个任务
@@ -46,6 +46,6 @@ const workLoop = (deadLine: IdleDeadline) => {
   }
 };
 const performUnitOfWork = () => {
-  works.shift()();
+  works.shift()!();
 };
 window.requestIdleCallback(workLoop, { timeout: 1000 });

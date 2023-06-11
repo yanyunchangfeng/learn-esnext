@@ -1,8 +1,8 @@
 // react fiber之前的协调  深度优先遍历
-//  1. React 会递归比对virtualDOM树，找出需要变动的节点，然后同步更新它们 ，这个过程React称为Reconcilation(协调)
-//  2. 在Reconcilation 期间，React 会一直占用着浏览器资源，一则会导致用户触发的事件得不到响应，二则会导致掉帧，用户可能会感觉到卡顿
+//  1. React 会递归比对virtualDOM树，找出需要变动的节点，然后同步更新它们 ，这个过程React称为Reconciliation(协调)
+//  2. 在Reconciliation 期间，React 会一直占用着浏览器资源，一则会导致用户触发的事件得不到响应，二则会导致掉帧，用户可能会感觉到卡顿
 
-const sleepDelay = (delay) => {
+const sleepDelay = (delay: number) => {
   let start = Date.now();
   do {
     var now = Date.now();
@@ -30,12 +30,12 @@ let root = {
     },
   ],
 };
-const doWork = (vdom) => {
+const doWork = (vdom: Record<string, any>) => {
   console.log(vdom.key);
 };
-const walk = (vdom) => {
+const walk = (vdom: Record<string, any>) => {
   doWork(vdom);
-  vdom.children.forEach((child) => {
+  vdom.children.forEach((child: any) => {
     walk(child);
   });
 };
@@ -70,16 +70,16 @@ C1.sibling = C2;
 type nextWork = FiberType | null;
 let nextUnitOfWork: nextWork = null; // 下一个执行单元
 
-const beginWork = (fiber) => {
+const beginWork = (fiber: FiberType) => {
   // A1 B1 C1 C2 B2
   sleepDelay(20);
   console.log("开始", fiber.key);
 };
-const completeUnitOfWork = (fiber) => {
+const completeUnitOfWork = (fiber: FiberType) => {
   // C1 C2 B1 B2 A1
   console.log("结束", fiber.key);
 };
-const performUnitOfWorks = (fiber) => {
+const performUnitOfWorks = (fiber: FiberType) => {
   // A1 B1 C1 C2
   beginWork(fiber); // 处理此fiber
   if (fiber.child) {

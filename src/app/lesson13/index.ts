@@ -1,10 +1,10 @@
 import Img from "src/assets/img/yanyunchangfeng.png";
 
 {
-  let ajax = function (callback) {
+  let ajax = function (this: any, callback: Function) {
     console.log("执行");
-    setTimeout(function () {
-      callback && callback.call();
+    setTimeout(() => {
+      callback && callback.call(this);
     }, 1000);
   };
   ajax(function () {
@@ -47,7 +47,7 @@ import Img from "src/assets/img/yanyunchangfeng.png";
 }
 
 {
-  let ajax = function (num) {
+  let ajax = function (num: number) {
     console.log("执行4");
     return new Promise<void>(function (resolve, reject) {
       if (num > 5) {
@@ -75,7 +75,7 @@ import Img from "src/assets/img/yanyunchangfeng.png";
 
 {
   //所有图片加载完再添加到页面
-  function loadImg(src) {
+  function loadImg(src: string) {
     return new Promise(function (resolve, reject) {
       let img = document.createElement("img");
       img.src = src;
@@ -87,7 +87,7 @@ import Img from "src/assets/img/yanyunchangfeng.png";
       };
     });
   }
-  function showImg(imgs) {
+  function showImg(imgs: HTMLImageElement[]) {
     imgs.forEach((img) => document.body.append(img));
   }
   // Promise.all([
@@ -99,8 +99,8 @@ import Img from "src/assets/img/yanyunchangfeng.png";
 
 {
   //有一个图片加载完成就添加到页面
-  function loadImg(src) {
-    return new Promise(function (resolve, reject) {
+  function loadImg(src: string) {
+    return new Promise<HTMLImageElement>(function (resolve, reject) {
       let img = document.createElement("img");
       img.src = src;
       img.onload = function () {
@@ -111,7 +111,7 @@ import Img from "src/assets/img/yanyunchangfeng.png";
       };
     });
   }
-  function showImg(img) {
+  function showImg(img: HTMLImageElement) {
     let p = document.createElement("p");
     p.append(img);
     document.body.append(p);

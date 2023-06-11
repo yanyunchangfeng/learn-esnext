@@ -1,10 +1,10 @@
 {
-  const validateValue = (value) => {
+  const validateValue = (value: any) => {
     console.log(value);
   };
-  const handleKeypress = (event) => {
+  const handleKeypress = (event: KeyboardEvent) => {
     if (event.keyCode === 13) {
-      let target = event.target;
+      let target: any = event.target;
       validateValue(target.value);
     }
   };

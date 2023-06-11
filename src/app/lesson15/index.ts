@@ -38,11 +38,11 @@
 }
 
 {
-  let draw = function (count) {
+  let draw = function (count: number) {
     //具体抽奖逻辑
     console.info(`剩余次数${count}`);
   };
-  let residue = function* (count) {
+  let residue = function* (count: number) {
     while (count > 0) {
       count--;
       yield draw(count);
@@ -53,17 +53,17 @@
   btn.id = "start";
   btn.innerHTML = "抽奖";
   document.body.appendChild(btn);
-  document.getElementById("start").addEventListener("click", function () {
+  document.getElementById("start")!.addEventListener("click", function () {
     star.next();
   });
 }
 {
-  function timeout(ms) {
+  function timeout(ms: number) {
     return new Promise((resolve) => {
       setTimeout(resolve, ms);
     });
   }
-  async function fn(value, ms) {
+  async function fn<T>(value: T, ms: number) {
     await timeout(ms);
     console.log(1000);
     await timeout(ms * 2);
@@ -89,7 +89,7 @@
   let pull = function () {
     let generator = ajax();
     let step: any = generator.next();
-    step.value.then(function (d) {
+    step.value.then(function (d: Record<string, any>) {
       if (d.code != 0) {
         setTimeout(function () {
           console.info("wait");
@@ -128,7 +128,7 @@
     yield "长";
     yield "风"; //返回一个字符串“风”出去，然后【让出】函数的执行权限，等待下一次next()调用
   }
-  let iterator = testGenerator(); //执行这个genernator函数返回迭代器对象
+  let iterator = testGenerator(); //执行这个generator函数返回迭代器对象
   console.log(iterator.next());
   console.log(iterator.next());
   console.log(iterator.next());
@@ -150,7 +150,7 @@
       yield num;
       num++;
     }
-    //这是死循环，但是页面不会卡死，因为genernator通过yeild关键字让出了执行权限，js引擎不会认为这是一个死循环卡死在这里
+    //这是死循环，但是页面不会卡死，因为generator通过yield关键字让出了执行权限，js引擎不会认为这是一个死循环卡死在这里
   }
   const num = naturalNumber();
   console.log(num.next());
@@ -162,10 +162,10 @@
   //    {value: 3, done: false}
   //    {value: 4, done: false}
 }
-// 4.既然generato函数会返回一个迭代器对象，那么我们可以利用这个特性，来给某些对象加上iterator属性
+// 4.既然generator函数会返回一个迭代器对象，那么我们可以利用这个特性，来给某些对象加上iterator属性
 // 利用Generator给自定义对象的接口实现Iterator接口
 {
-  const user = {
+  const user: Record<string | symbol, any> = {
     name: "yycf",
     age: 26,
   };
@@ -262,15 +262,15 @@
 
 {
   // 8.用yield封装Promise
-  function getData(x) {
-    return new Promise((resolve, reject) => {
+  function getData(x: number) {
+    return new Promise<number>((resolve, reject) => {
       setTimeout(() => {
         resolve(x * 2);
       }, 1000);
     });
   }
   //我们的目标是：两次异步操作都成功之后，才去做我们的业务，并且两次异步有先后顺序，即第一次异步执行完成后，执行第二步操作
-  function* myBz() {
+  function* myBz(): Iterator<Promise<number>, Promise<number>, any> {
     let p1 = yield getData(10);
     console.log(p1);
     let p2 = yield getData(20);
@@ -285,16 +285,16 @@
   // })
   // 回调地狱
   //自动调用方法；递归调用工具
-  function runner(generator) {
+  function runner(generator: Function) {
     let g = generator();
-    function next(data?) {
+    function next(data?: any) {
       let result = g.next(data);
       // next() 方法返回一个包含属性 done 和 value 的对象。该方法也可以通过接受一个参数用以向生成器传值。
       // next 的参数就是 yield 表达式的返回值。
       if (result.done) {
         return result.value;
       }
-      result.value.then(function (data) {
+      result.value.then(function (data: any) {
         next(data); //这里开始递归
       });
     }
@@ -318,7 +318,7 @@
 }
 
 {
-  function* foo(x) {
+  function* foo(x: number): Generator<number, number, number> {
     var y = 2 * (yield x + 1);
     var z = yield y / 3;
     return x + y + z;
@@ -342,12 +342,12 @@
   // 从语义上讲，第一个next()方法用来启动遍历器对象，所以不用带有参数。
 }
 
-function* mygen() {
+function* myGen() {
   yield 1;
   yield 2;
   return 1 + 2;
 }
-let gen = mygen();
+let gen = myGen();
 let result = gen.next();
 while (!result.done) {
   console.log(result);

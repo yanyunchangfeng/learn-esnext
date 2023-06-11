@@ -1,8 +1,13 @@
 //修饰器是一个函数，用来修改类的行为
 
 // A = {a:3}
+
 {
-  let readonly = function (target, name, descriptor) {
+  let readonly = function <T>(
+    target: T,
+    name: string,
+    descriptor: PropertyDescriptor
+  ) {
     descriptor.writable = false;
     return descriptor;
   };
@@ -20,14 +25,14 @@
 }
 
 {
-  let typename = (constructor) => {
+  let typename = (constructor: typeof Test) => {
     // target.myname = 'yycf';
     console.dir(constructor);
     constructor.myname = "yycf";
   };
   @typename
   class Test {
-    static myname;
+    static myname: string;
   }
   console.dir(Test.myname); // yycf
   //第三方库修饰器的js库：core-decorators //npm i core-decorators
@@ -36,10 +41,10 @@
 {
   //好处1. 把埋点系统抽离出来，成为一个可复用的模块,将来埋点接口变了，只用改log方法 广告类几乎不动
   //2.埋点系统从业务逻辑中剥离出去，业务代码更简洁便于维护
-  let log = (type) => {
-    return (target, name, descriptor) => {
+  let log = (type: string) => {
+    return <T>(target: T, name: string, descriptor: PropertyDescriptor) => {
       let src_method = descriptor.value;
-      descriptor.value = (...arg) => {
+      descriptor.value = (...arg: any[]) => {
         src_method.apply(target, arg);
         // 模拟埋点  埋点后执行
         //在真实的业务中一般为 new Image().src  然后一个接口

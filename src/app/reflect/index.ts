@@ -19,7 +19,7 @@ function Inject(token: Token<any>) {
    *paramsIndex 此参数在参数列表中的索引
    *GrilFriend.index-1.METADATA_INJECT_KEY = type
    */
-  return function (target: any, _: string, paramsIndex: number) {
+  return function (target: any, _: string | undefined, paramsIndex: number) {
     // 定义这个元数据之后有什么用？
     Reflect.defineMetadata(
       METADATA_INJECT_KEY,
@@ -33,7 +33,11 @@ function Inject(token: Token<any>) {
   };
 }
 function f() {
-  return function (target, key, descriptor: PropertyDescriptor) {
+  return function (
+    target: InstanceType<typeof GirlFriend>,
+    key: string,
+    descriptor: PropertyDescriptor
+  ) {
     console.log(descriptor.value.length);
   };
 }

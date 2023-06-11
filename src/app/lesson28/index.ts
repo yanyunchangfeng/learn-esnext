@@ -3,24 +3,25 @@
 
 // 装饰器模式 （对原本的功能进行包装）
 // 扩展方法 会用到高阶函数
-function core(a, b, c) { // 核心代码
-    // todo...
-    console.log('core .......', a, b, c)
+function core<T>(a: T, b: T, c: T) {
+  // 核心代码
+  // todo...
+  console.log("core .......", a, b, c);
 }
 // 给core函数增加一些额外的逻辑 但是不能更改核心代码
 // 每个类都有一个原型，所有实例都有一个属性__proto__
 Function.prototype.before = function (beforeFn) {
-    // this = core 
-    return (...args) => {// newCore  剩余运算符 可以把多个参数转化成数组     箭头函数中没有this 没有arguments 没有prototype
-        beforeFn() 
-        this(...args)// 拓展运算符
-    }
-}
+  // this = core
+  return (...args: any[]) => {
+    // newCore  剩余运算符 可以把多个参数转化成数组     箭头函数中没有this 没有arguments 没有prototype
+    beforeFn();
+    this(...args); // 拓展运算符
+  };
+};
 let newCore = core.before(() => {
-    console.log('core before')
-})
-newCore(1, 2, 4)
-
+  console.log("core before");
+});
+newCore(1, 2, 4);
 
 // 闭包 1） 定义函数的作用域 和调用的作用域不是同一个
 

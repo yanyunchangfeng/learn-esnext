@@ -22,7 +22,7 @@ export class Container {
   // 获取对应的服务
   // inject 方法所实现的功能就是根据Token获取与之对应的对象
   inject(type: Token<any>) {
-    let provider = this.providers.get(type);
+    let provider = this.providers.get(type) as Provider<any>;
     return this.injectWithProvider(type, provider);
   }
   injectWithProvider<T>(type: Token<T>, provider: Provider<T>): T {
@@ -58,7 +58,7 @@ export class Container {
       const overwriteToken = getInjectionToken(target, index);
       const actualToken =
         overwriteToken === undefined ? argType : overwriteToken;
-      let provider = this.providers.get(actualToken);
+      let provider = this.providers.get(actualToken) as Provider<any>;
       return this.injectWithProvider(actualToken, provider);
     });
   }

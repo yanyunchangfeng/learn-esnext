@@ -1,8 +1,8 @@
 import { Token } from "./provider";
-
+import { Type } from "./type";
 const METADATA_INJECT_KEY = "METADATA_INJECT_KEY";
-export function Injector(token) {
-  return function (target, key, paramsIndex) {
+export function Injector<T>(token: Token<T>) {
+  return function (target: any, key: undefined, paramsIndex: number) {
     Reflect.defineMetadata(
       METADATA_INJECT_KEY,
       token,
@@ -12,7 +12,7 @@ export function Injector(token) {
     return target;
   };
 }
-export function getInjectionToken(target, index) {
+export function getInjectionToken<T>(target: Type<T>, index: number) {
   let token = Reflect.getMetadata(
     METADATA_INJECT_KEY,
     target,

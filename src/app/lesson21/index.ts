@@ -1,7 +1,7 @@
 // rAf的用法 页面上绘制一个进度条 值0%=>100%
-let btn = document.getElementById("btn");
-let processBar = document.getElementById("process-bar");
-let start;
+let btn = <HTMLButtonElement>document.getElementById("btn");
+let processBar = <HTMLDivElement>document.getElementById("process-bar");
+let start = 0;
 
 const ProcessExecution = () => {
   processBar.style.width = String(processBar.offsetWidth + 1) + "px";

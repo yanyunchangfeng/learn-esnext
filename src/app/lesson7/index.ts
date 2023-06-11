@@ -2,7 +2,7 @@
 export {};
 {
   //默认值后不能有没有默认值的变量
-  function test(x, y = "yanyunchangfeng") {
+  function test<T>(x: T, y = "yanyunchangfeng") {
     console.log(x, y);
   }
   test("hello"); //  hello yanyunchangfeng
@@ -11,12 +11,12 @@ export {};
 
 {
   let x = "test";
-  function test(x?, y = x) {
+  function test<T>(x?: T, y = x) {
     console.log("scope", x, y);
   }
   test("yycf"); //scope yycf yycf
   test(); // scope undefined undefined
-  function test1(c, y = x) {
+  function test1<T>(c: T, y = x) {
     console.log("scope", c, y);
     //scope d test
   }
@@ -26,7 +26,7 @@ export {};
 
 {
   //rest 参数后不能有其他参数 ，因为在转换为数组时，不知道到什么时候截止
-  function test(...arg) {
+  function test<T>(...arg: T[]) {
     for (let v of arg) {
       console.log(v); // 1,3,5,7,8
     }
@@ -41,17 +41,17 @@ export {};
 }
 
 {
-  let arrow = (v) => v * 2;
+  let arrow = <T extends number>(v: T) => v * 2;
   console.log(arrow(3)); //6
 }
 
 {
   //尾调用 函数的最后一句话是不是一个函数
 
-  function tail(x) {
+  function tail<T>(x: T) {
     console.log("tail", x);
   }
-  function fx(x) {
+  function fx<T>(x: T) {
     return tail(x);
   }
   fx(666); // tail 666

@@ -15,7 +15,7 @@
 }
 {
   let a1 = Symbol.for("abc");
-  let obj = {
+  let obj: Record<string | number | symbol, any> = {
     [a1]: 123,
     abc: 456,
     c: 456,

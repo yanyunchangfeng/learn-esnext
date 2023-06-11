@@ -1,5 +1,5 @@
 {
-  function sleep1(duration) {
+  function sleep1(duration: number) {
     return new Promise(function (resolve, reject) {
       setTimeout(resolve, duration);
     });
@@ -16,12 +16,12 @@
 }
 
 {
-  function sleep(duration) {
+  function sleep(duration: number) {
     return new Promise(function (resolve, reject) {
       setTimeout(resolve, duration);
     });
   }
-  async function foo(name) {
+  async function foo<T>(name: T) {
     await sleep(2000);
     console.log(name);
   }
@@ -34,7 +34,7 @@
   //又两秒后输出 b
 }
 
-const fetchData = (data) =>
+const fetchData = (data: any) =>
   new Promise((resolve) => setTimeout(resolve, 1000, data + 1));
 
 const fetchValue = async function () {
@@ -49,11 +49,11 @@ fetchValue();
 // async 编译后的代码
 //async + await  === generator + co
 // async + await  是generator的语法糖
-function _asyncToGenerator(fn) {
-  return function (...args) {
+function _asyncToGenerator(fn: Function) {
+  return function (this: any, ...args: any[]) {
     let genFn = fn.apply(this, args);
     return new Promise((res, rej) => {
-      function step(key, arg?) {
+      function step(key: string, arg?: any) {
         try {
           var { value, done } = genFn[key](arg);
         } catch (err) {

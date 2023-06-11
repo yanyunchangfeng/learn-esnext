@@ -7,7 +7,7 @@
 // import 'src/app/lesson7';
 // import 'src/app/lesson8';
 // import 'src/app/lesson9';
-import "src/app/lesson10";
+// import "src/app/lesson10";
 // import 'src/app/lesson11';
 // import 'src/app/lesson12';
 // import 'src/app/lesson13';
@@ -26,5 +26,5 @@ import "src/app/lesson10";
 // import 'src/app/lesson27/eventLoopRender';
 // import 'src/app/lesson29';
 // import 'src/app/lesson29/curring';
-// import "src/app/ioc/index.spec";
+import "src/app/ioc/index.spec";
 // import "src/app/inversify-di";

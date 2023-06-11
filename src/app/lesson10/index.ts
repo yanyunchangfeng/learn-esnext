@@ -159,12 +159,14 @@
   const wm = new WeakMap();
   wm.set({}, "val");
   setTimeout(() => console.log("wm", wm), 5000); // 引用消失
-
-  const container = {
+  interface Container {
+    key: object | null;
+  }
+  const container: Container = {
     key: {},
   };
   const wm1 = new WeakMap();
-  wm1.set(container.key, "val");
+  wm1.set(container.key!, "val");
   function removeReference() {
     container.key = null;
   }
@@ -214,12 +216,12 @@
 
   //改
 
-  set.forEach((item: Record<string, any>) => (item.t ? (item.t = 2) : ""));
+  set.forEach((item: any) => (item.t ? (item.t = 2) : ""));
   arr.forEach((item) => (item.t ? (item.t = 2) : ""));
   console.log("set-arr-modify", set, arr); //set-arr-modify Set(1) {{…}}size: (...)__proto__: Set[[Entries]]: Array(1)0: Objectlength: 1 [{…}]0: {t: 2}length: 1__proto__: Array(0)
 
   //删除
-  set.forEach((item: Record<string, any>) => (item.t ? set.delete(item) : ""));
+  set.forEach((item: any) => (item.t ? set.delete(item) : ""));
   let index = arr.findIndex((item) => item.t);
   arr.splice(index, 1);
   console.info("set-arr-empty", arr, set); //set-arr-empty [] Set(0) {}
@@ -230,7 +232,7 @@
   let item = { t: 1 };
   let map = new Map();
   let set = new Set();
-  let obj = {};
+  let obj: Record<string | number, any> = {};
   //增
   map.set("t", 1);
   set.add(item);
@@ -311,7 +313,7 @@
   // 2.WeakSet 里面的对象是弱引用，只要对象的引用为0，随时可能被垃圾收集器收回
 
   const ws2 = new WeakSet();
-  let arr = [];
+  let arr: any[] = [];
   ws2.add(window);
   ws2.add(arr);
   let now,
@@ -334,7 +336,7 @@
   // }, 1000);
 }
 
-const deepClone = (obj, hash = new WeakMap()) => {
+const deepClone = (obj: any, hash = new WeakMap()) => {
   // 判断obj是undefined 还是null
   if (obj == null) return obj;
 
@@ -357,10 +359,10 @@ const deepClone = (obj, hash = new WeakMap()) => {
 };
 
 let arr = [3, 5, 6, 5];
-let obj = { age: { name: "yycf" } };
+let obj: Record<string | number, any> = { age: { name: "yycf" } };
 obj["xxx"] = obj;
-let newobj = deepClone(obj);
-console.log(newobj == obj, "newobj == obj");
-console.log(newobj, "newobj");
+let newObj = deepClone(obj);
+console.log(newObj == obj, "newObj == obj");
+console.log(newObj, "newObj");
 
 export {};

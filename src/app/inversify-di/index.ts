@@ -27,7 +27,7 @@ class Sword implements Weapon {
 
 class Warrior {
   @lazyInject(TYPES.Weapon)
-  public weapon: Weapon;
+  public weapon!: Weapon;
 }
 
 container.bind<Weapon>(TYPES.Weapon).to(Sword);

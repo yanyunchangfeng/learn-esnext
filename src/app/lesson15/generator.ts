@@ -7,8 +7,13 @@
 //     return 4
 // }
 export {};
-
-function gen$(context) {
+type Context = {
+  prev: number;
+  next: number;
+  done: boolean;
+  stop: () => void;
+};
+function gen$(context: Context) {
   // while (true) {
   switch ((context.prev = context.next)) {
     case 0:
@@ -66,17 +71,17 @@ function p2() {
   });
 }
 
-function* read() {
+function* read(): Generator<any> {
   //switch - case => babel编译后就是把一个函数分成多个case 采用指针的方式向下移动
-  let rp1 = yield p1();
-  let rp2 = yield p2();
+  let rp1: any = yield p1();
+  let rp2: any = yield p2();
   return rp1 + rp2;
 }
 
-function co(it) {
+function co(it: Generator) {
   // 异步迭代采用函数的方式
   return new Promise((res, rej) => {
-    function step(data?) {
+    function step(data?: any) {
       const { done, value } = it.next(data);
       if (!done) {
         Promise.resolve(value).then((data) => {

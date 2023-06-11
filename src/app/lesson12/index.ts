@@ -79,7 +79,7 @@
 {
   //静态属性
   class Parent {
-    static type;
+    static type: string;
     name;
     constructor(name = "yycf") {
       this.name = name;
@@ -116,7 +116,7 @@ console.log(Test.a); //1
 //     })
 // }
 
-var spArray = function (N, Q) {
+var spArray = function (N: number, Q: any[]) {
   var R = [],
     F;
   for (F = 0; F < Q.length; ) {

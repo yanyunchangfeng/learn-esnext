@@ -1,7 +1,7 @@
 //Proxy Reflect  供应商 代理商 用户 中间连接了用户 和最真实的对象中间的一个层 Reflect 反射的是Object
 
 {
-  let obj = {
+  let obj: Record<string | number | symbol, any> = {
     time: "2019-05-01",
     name: "yycf",
     _r: 123,
@@ -71,7 +71,7 @@ interface ProxyHandler<T> {
   _validator?: any;
 }
 {
-  function validator(target, validator: any) {
+  function validator(target: Person, validator: any) {
     return new Proxy(target, {
       _validator: validator,
       set(target, key: string, value, proxy) {
@@ -91,15 +91,15 @@ interface ProxyHandler<T> {
     });
   }
   const personValidators = {
-    name(val) {
+    name(val: string) {
       return typeof val === "string";
     },
-    age(val) {
+    age(val: number) {
       return typeof val === "number" && val > 18;
     },
   };
   class Person {
-    constructor(public name, public age) {
+    constructor(public name: string, public age: number) {
       this.name = name;
       this.age = age;
       return validator(this, personValidators);

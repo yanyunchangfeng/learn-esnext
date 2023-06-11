@@ -6,22 +6,22 @@ class Update {
   //payload数据或者 说元素
   payload;
   nextUpdate;
-  constructor(payload, nextUpdate?) {
+  constructor(payload: any, nextUpdate?: any) {
     this.payload = payload;
     this.nextUpdate = nextUpdate;
   }
 }
 
 class UpdateQueue {
-  baseState;
-  firstUpdate;
-  lastUpdate;
+  baseState: any;
+  firstUpdate: any;
+  lastUpdate: any;
   constructor() {
     this.baseState = null; // 原状态
     this.firstUpdate = null; // 第一个更新
     this.lastUpdate = null; // 最后一个更新
   }
-  enqueueUpdate(update) {
+  enqueueUpdate(update: any) {
     if (this.firstUpdate === null) {
       this.firstUpdate = this.lastUpdate = update;
     } else {
@@ -50,7 +50,7 @@ class UpdateQueue {
 let queue = new UpdateQueue();
 queue.enqueueUpdate(new Update({ name: "yanyunchangfeng" }));
 queue.enqueueUpdate(new Update({ number: 2022 }));
-queue.enqueueUpdate(new Update((state) => ({ number: state.number + 1 })));
-queue.enqueueUpdate(new Update((state) => ({ number: state.number + 1 })));
+queue.enqueueUpdate(new Update((state: any) => ({ number: state.number + 1 })));
+queue.enqueueUpdate(new Update((state: any) => ({ number: state.number + 1 })));
 queue.forceUpdate();
 console.log(queue.baseState);
