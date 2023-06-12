@@ -26,5 +26,6 @@
 // import 'src/app/lesson27/eventLoopRender';
 // import 'src/app/lesson29';
 // import 'src/app/lesson29/curring';
-import "src/app/ioc/index.spec";
+// import "src/app/ioc/index.spec";
+// import "src/app/lesson13/promisify";
 // import "src/app/inversify-di";

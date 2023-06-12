@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 
 function fn(arg: any, callback: Function) {
   setTimeout(() => {
@@ -52,6 +52,22 @@ Promise.race = (promises: any[]) => {
     }
   });
 };
+// Promise.all 的实现原理
+Promise.all = <T>(promises: T[]): Promise<T[]> => {
+  return new Promise((rs, rj) => {
+    let count = 0;
+    let result: any[] = [];
+    let len = promises.length;
+    if (!len) rs(result);
+    promises.forEach((promise, i) => {
+      Promise.resolve(promise).then((res: any) => {
+        count += 1;
+        result[i] = res;
+        if (count === len) rs(result);
+      }, rj);
+    });
+  });
+};
 
 const p1 = new Promise((res, rej) => {
   setTimeout(() => {
@@ -71,3 +87,10 @@ Promise.race([p1, p2])
   .catch((err) => {
     console.log(err);
   });
+
+Promise.all([p1, p2]).then(
+  (data) => {
+    console.log(data);
+  },
+  (err) => console.log(err)
+);
