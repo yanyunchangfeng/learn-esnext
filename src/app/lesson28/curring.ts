@@ -27,22 +27,26 @@ function sum<T extends number>(a: T, b: T, c: T, d: T, e: T) {
 }
 // 分批传入参数
 // redux compose
-const curring = (fn: Function, arr: any[] = []) => {
+const curringOld = (fn: Ifn, arr: any[] = []) => {
   //arr 就是我们要收集每次调用时传入的参数
   let len = fn.length; //函数的长度就是参数个数
   return function (...args: any[]) {
     let newArgs = [...arr, ...args];
     if (newArgs.length === len) {
+      // 有问题1. 如果传入的参数过多，无法执行函数
+      // curringOld函数 形式上接收两个参数，不如curring一个参数优雅
       return fn(...newArgs);
     } else {
-      return curring(fn, newArgs);
+      return curringOld(fn, newArgs);
     }
   };
 };
 
 // 实现通用的柯里化函数，高阶函数
-
-function curringSim(fn: Function) {
+interface Ifn {
+  (...args: any[]): any;
+}
+function curring<T extends Ifn>(fn: T) {
   // 存储每次调用的时候传入的变量
   const inner = (args: any[] = []) => {
     // 存储每次调用时传入的变量

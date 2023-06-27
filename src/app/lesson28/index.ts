@@ -8,6 +8,11 @@ function core<T>(a: T, b: T, c: T) {
   // todo...
   console.log("core .......", a, b, c);
 }
+type Fn = (...args: any[]) => any;
+interface Function {
+  before(fn: Fn): Fn;
+}
+
 // 给core函数增加一些额外的逻辑 但是不能更改核心代码
 // 每个类都有一个原型，所有实例都有一个属性__proto__
 Function.prototype.before = function (beforeFn) {
