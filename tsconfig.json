@@ -3,7 +3,6 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "allowJs": true,
     "module": "esnext",
     "strict": true,
     "lib": ["dom", "esnext"],
