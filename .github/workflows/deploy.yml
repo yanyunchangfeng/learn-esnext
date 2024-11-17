@@ -1,15 +1,27 @@
 name: Deploy
 
+env:
+  TEST_SCRIPT: ${{vars.TEST_SCRIPT ||  'test'}}
+
 on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
+      - dev/**
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
-    name: Build
+    name: deploy
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repo
@@ -17,48 +29,26 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: '21.x'
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: true
 
       - name: Test project
-        run: npm run pre-commit
+        run: pnpm ${{env.TEST_SCRIPT}}
 
       - name: Build project
-        run: npm run build
+        run: pnpm build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: github-pages
-          path: ./dist
-
-      - name: Deploy to remote gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
