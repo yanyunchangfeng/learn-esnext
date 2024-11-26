@@ -4,7 +4,7 @@
   // Set会维护值插入时的顺序，因此支持按顺序迭代。
   // 集合实例可以提供一个迭代器(Iterator),能以插入顺序生成集合内容。
   // 可以通过values()方法及其别名方法keys() (或者Symbol.iterator属性，它引用values())取得这个迭代器
-  let s = new Set(["val1", "val2", "val3"]);
+  let s = new Set(['val1', 'val2', 'val3']);
   console.log(s.keys === s[Symbol.iterator]); //true
   console.log(s.values === s[Symbol.iterator]); //true
   for (let key of s.keys()) {
@@ -47,35 +47,35 @@
   list.add(2);
   list.add(1);
   console.log(list.size); //2
-  let arr = [1, 2, 1, 2, 4, 4, "2"];
+  let arr = [1, 2, 1, 2, 4, 4, '2'];
   let list1 = new Set(arr);
   console.log(list1); //Set(3) {1, 2, 4,'2'} 无法过滤数据类型不一样的 注意2 和'2'
   //这个特性可以去重，不过效率没有hash算法高
 }
 {
-  let arr = ["add", "delete", "has", "clear"];
+  let arr = ['add', 'delete', 'has', 'clear'];
   let list = new Set(arr);
-  console.log("has", list.has("add")); //has true
-  console.log("delete", list.delete("add"), list); //delete true Set(3) {"delete", "has", "clear"}
+  console.log('has', list.has('add')); //has true
+  console.log('delete', list.delete('add'), list); //delete true Set(3) {"delete", "has", "clear"}
   for (let key of list.keys()) {
-    console.log("key", key); //key delete
+    console.log('key', key); //key delete
     // key has
     // key clear
   }
 
   for (let value of list.values()) {
-    console.log("value", value); //value delete
+    console.log('value', value); //value delete
     // value has
     // value clear
   }
 
   for (let value of list) {
-    console.log("value", value); //value delete
+    console.log('value', value); //value delete
     // value has
     // value clear
   }
   for (let [key, value] of list.entries()) {
-    console.log("key-value", key, value); // key-value delete delete
+    console.log('key-value', key, value); // key-value delete delete
     // key-value has has
     // key-value clear clear
   }
@@ -105,18 +105,18 @@
 {
   // map的key可以是任意类型
   let map = new Map();
-  let arr = ["123"];
+  let arr = ['123'];
   map.set(arr, 9);
-  console.log("map", map.get(arr)); //map 9
+  console.log('map', map.get(arr)); //map 9
 }
 {
   // Map实例 会维护键值对的插入顺序，因此可以根据插入顺序执行迭代操作。
   // 映射实例可以提供一个迭代器(Iterator),能以插入顺序生成[key,value]形式的数组。可以通过entries()方法(或者Symbol.iterator属性，它引用entries())取得这个迭代器
   let map = new Map([
-    ["a", 123],
-    ["b", 456],
+    ['a', 123],
+    ['b', 456]
   ]);
-  console.log("size", map.size); // size 2
+  console.log('size', map.size); // size 2
   console.log(map.entries === map[Symbol.iterator]); // true
   for (let pair of map.entries()) {
     console.log(pair); //  ['a', 123]  ['b', 456]
@@ -137,9 +137,9 @@
     console.log(value); // 123 456
   }
   const keyObj = {
-    id: 1,
+    id: 1
   };
-  let m1 = new Map([[keyObj, "val1"]]);
+  let m1 = new Map([[keyObj, 'val1']]);
   for (let key of m1.keys()) {
     key.id = 5;
     console.log(key); // { id:5}
@@ -157,16 +157,16 @@
   // 弱键 “weak”表示弱映射的键是“弱弱地拿着”的。意思就是，这些键不属于正式的引用，不会阻止垃圾回收。
   // 但要注意的是，弱映射中值的引用可不是“弱弱地拿着”的。只要键存在，键/值对就会存在于映射中，并被当作对值的引用，因此就不会被当作垃圾回收。
   const wm = new WeakMap();
-  wm.set({}, "val");
-  setTimeout(() => console.log("wm", wm), 5000); // 引用消失
+  wm.set({}, 'val');
+  setTimeout(() => console.log('wm', wm), 5000); // 引用消失
   interface Container {
     key: object | null;
   }
   const container: Container = {
-    key: {},
+    key: {}
   };
   const wm1 = new WeakMap();
-  wm1.set(container.key!, "val");
+  wm1.set(container.key!, 'val');
   function removeReference() {
     container.key = null;
   }
@@ -179,24 +179,24 @@
   let map = new Map();
   let arr = [];
   //增
-  map.set("t", 1);
+  map.set('t', 1);
   arr.push({ t: 1 });
   console.info(map, arr);
   //查
-  let map_exist = map.has("t");
+  let map_exist = map.has('t');
   let arr_exist = arr.find((item) => item.t);
-  console.info("map-arr", map_exist, arr_exist); // true {t: 1}
+  console.info('map-arr', map_exist, arr_exist); // true {t: 1}
 
   //改
-  map.set("t", 2);
-  arr.forEach((item) => (item.t ? (item.t = 2) : ""));
-  console.info("map-array-modify", map, arr); //map-array-modify Map(1) {"t" => 2} [{…}]
+  map.set('t', 2);
+  arr.forEach((item) => (item.t ? (item.t = 2) : ''));
+  console.info('map-array-modify', map, arr); //map-array-modify Map(1) {"t" => 2} [{…}]
 
   //删除
-  map.delete("t");
+  map.delete('t');
   let index = arr.findIndex((item) => item.t);
   arr.splice(index, 1);
-  console.info("map-arr-empty", map, arr); //map-arr-empty Map(0) {} []
+  console.info('map-arr-empty', map, arr); //map-arr-empty Map(0) {} []
 }
 
 {
@@ -207,24 +207,24 @@
   let obj = { t: 1 };
   set.add(obj);
   arr.push(obj);
-  console.log("set-arr-add", set, arr);
+  console.log('set-arr-add', set, arr);
 
   //查
   let set_exist = set.has(obj); //方法一样
   let arr_exist = arr.find((item) => item.t);
-  console.info("set-arr-find", set_exist, arr_exist); //set-arr-find true {t: 1}
+  console.info('set-arr-find', set_exist, arr_exist); //set-arr-find true {t: 1}
 
   //改
 
-  set.forEach((item: any) => (item.t ? (item.t = 2) : ""));
-  arr.forEach((item) => (item.t ? (item.t = 2) : ""));
-  console.log("set-arr-modify", set, arr); //set-arr-modify Set(1) {{…}}size: (...)__proto__: Set[[Entries]]: Array(1)0: Objectlength: 1 [{…}]0: {t: 2}length: 1__proto__: Array(0)
+  set.forEach((item: any) => (item.t ? (item.t = 2) : ''));
+  arr.forEach((item) => (item.t ? (item.t = 2) : ''));
+  console.log('set-arr-modify', set, arr); //set-arr-modify Set(1) {{…}}size: (...)__proto__: Set[[Entries]]: Array(1)0: Objectlength: 1 [{…}]0: {t: 2}length: 1__proto__: Array(0)
 
   //删除
-  set.forEach((item: any) => (item.t ? set.delete(item) : ""));
+  set.forEach((item: any) => (item.t ? set.delete(item) : ''));
   let index = arr.findIndex((item) => item.t);
   arr.splice(index, 1);
-  console.info("set-arr-empty", arr, set); //set-arr-empty [] Set(0) {}
+  console.info('set-arr-empty', arr, set); //set-arr-empty [] Set(0) {}
 }
 
 {
@@ -234,28 +234,28 @@
   let set = new Set();
   let obj: Record<string | number, any> = {};
   //增
-  map.set("t", 1);
+  map.set('t', 1);
   set.add(item);
-  obj["t"] = 1;
-  console.info("map-set-obj", map, set, obj);
+  obj['t'] = 1;
+  console.info('map-set-obj', map, set, obj);
 
   //查
   console.info({
-    map_exist: map.has("t"), //true
+    map_exist: map.has('t'), //true
     set_exist: set.has(item), //true
-    obj_exist: "t" in obj, // true
+    obj_exist: 't' in obj // true
   });
   //改
-  map.set("t", 2);
+  map.set('t', 2);
   item.t = 2;
-  obj["t"] = 2;
-  console.info("map-set-obj-modify", obj, map, set);
+  obj['t'] = 2;
+  console.info('map-set-obj-modify', obj, map, set);
 
   //删除
-  map.delete("t");
+  map.delete('t');
   set.delete(item);
-  delete obj["t"];
-  console.info("map-set-obj-empty", map, set, obj); //map-set-obj-empty Map(0) {} Set(0) {} {}
+  delete obj['t'];
+  console.info('map-set-obj-empty', map, set, obj); //map-set-obj-empty Map(0) {} Set(0) {} {}
 }
 
 //优先使用map 不用数组 ，如果考虑数据的唯一性 考虑使用set 放弃数组和obj
@@ -343,7 +343,7 @@ const deepClone = (obj: any, hash = new WeakMap()) => {
   if (obj instanceof Date) return new Date(obj);
   if (obj instanceof RegExp) return new RegExp(obj);
 
-  if (typeof obj !== "object") return obj; // 不是对象就不用拷贝了
+  if (typeof obj !== 'object') return obj; // 不是对象就不用拷贝了
   // 要不是数组 要不是对象
   if (hash.has(obj)) return hash.get(obj); //如果weakMap中有对象就直接返回
 
@@ -359,10 +359,24 @@ const deepClone = (obj: any, hash = new WeakMap()) => {
 };
 
 let arr = [3, 5, 6, 5];
-let obj: Record<string | number, any> = { age: { name: "yycf" } };
-obj["xxx"] = obj;
+let obj: Record<string | number, any> = { age: { name: 'yycf' } };
+obj['xxx'] = obj;
 let newObj = deepClone(obj);
-console.log(newObj == obj, "newObj == obj");
-console.log(newObj, "newObj");
+console.log(newObj == obj, 'newObj == obj');
+console.log(newObj, 'newObj');
+
+const groupDuplicates = (arr: any[]) => {
+  let map = new Map();
+  arr.forEach((item) => {
+    if (map.has(item)) {
+      map.get(item).push(item);
+    } else {
+      map.set(item, [item]);
+    }
+  });
+  return [...map.values()];
+};
+
+console.log(groupDuplicates([1, 23, 44, 66, 44]));
 
 export {};
