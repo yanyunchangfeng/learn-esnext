@@ -1,3 +1,9 @@
+# [1.1.0-rc.1](https://github.com/yanyunchangfeng/learn-esnext/compare/v1.0.0...v1.1.0-rc.1) (2024-11-26)
+
+### Features
+
+- add group duplicate ([6ee5745](https://github.com/yanyunchangfeng/learn-esnext/commit/6ee5745d003c036e83e7a803a8ee9fb1fbc84a4f))
+
 # 1.0.0 (2024-11-17)
 
 ### Features
