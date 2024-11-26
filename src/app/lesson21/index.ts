@@ -1,11 +1,12 @@
 // rAf的用法 页面上绘制一个进度条 值0%=>100%
-let btn = <HTMLButtonElement>document.getElementById("btn");
-let processBar = <HTMLDivElement>document.getElementById("process-bar");
+let btn = <HTMLButtonElement>document.getElementById('btn');
+let processBar = <HTMLDivElement>document.getElementById('process-bar');
 let start = 0;
 
-const ProcessExecution = () => {
-  processBar.style.width = String(processBar.offsetWidth + 1) + "px";
-  processBar.innerHTML = processBar.offsetWidth + "%"; //修改文本为百分比
+const ProcessExecution = (timestamp: number) => {
+  console.log(timestamp);
+  processBar.style.width = String(processBar.offsetWidth + 1) + 'px';
+  processBar.innerHTML = processBar.offsetWidth + '%'; //修改文本为百分比
   if (processBar.offsetWidth < 100) {
     let current = Date.now();
     //假如说浏览器本身的任务执行时间是5ms
@@ -14,8 +15,8 @@ const ProcessExecution = () => {
     requestAnimationFrame(ProcessExecution);
   }
 };
-btn.addEventListener("click", () => {
-  processBar.style.width = "0"; //先把宽度清除 rAf 后面会用到
+btn.addEventListener('click', () => {
+  processBar.style.width = '0'; //先把宽度清除 rAf 后面会用到
   let current = Date.now();
   start = current;
   requestAnimationFrame(ProcessExecution);
