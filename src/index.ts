@@ -7,7 +7,8 @@
 // import 'src/app/lesson7';
 // import 'src/app/lesson8';
 // import "src/app/lesson9";
-import 'src/app/lesson10';
+import 'src/app/reduce';
+// import 'src/app/lesson10';
 // import 'src/app/lesson11';
 // import 'src/app/lesson12';
 // import 'src/app/lesson13';

@@ -16,8 +16,6 @@
 打开你的命令行终端，执行以下命令：
 
 ```
-   git clone https://gitee.com/yanyunchangfeng/esnext.git
-   cd esnext
    pnpm i
    pnpm start
 ```
@@ -36,7 +34,7 @@
 - [Set Map WeakSet WeakMap](src/app/lesson10/index.ts)
 - [Proxy Reflect ](src/app/lesson11/index.ts)
 - [Class](src/app/lesson12/index.ts)
-- [Promise](src/app/lesson13/index.ts) | [promisify promisifyAll & Promise.race](src/app/lesson13/promisify.ts) | [abort Promise](src/app/lesson13/abort.ts)
+- [Promise](src/app/lesson13/index.ts) | [promisify & promisifyAll & Promise.race & Promise.all](src/app/lesson13/promisify.ts) | [abort Promise](src/app/lesson13/abort.ts)
 - [Iterator 和 for ... of](src/app/lesson14/index.ts)
 - [generator](src/app/lesson15/index.ts) | [generator 实现原理](src/app/lesson15/generator.ts)
 - [decorator](src/app/lesson16/index.ts)
@@ -50,7 +48,8 @@
 - [Reflect Metadata](src/app/lesson25/index.ts) | [Reflect Metadata md ](src/app/lesson25/index.md)
 - [Ioc & DI](src/app/lesson26/index.ts) | [Ioc&DI md ](src/app/lesson26/index.md) | [\_\_metadata/装饰器](src/app/ioc/index.ts) | [ioc Container](src/app/ioc/container.ts) | [ioc Provider](src/app/ioc/provider.ts) | [ioc Inject](src/app/ioc/inject.ts) | [ioc Injectable](src/app/ioc/injectable.ts) | [ioc spec](src/app/ioc/index.spec.ts) | [ioc reflect ts](src/app/reflect/index.ts) | [ioc reflect js](src/app/reflect/index.js) | [ioc reflect originjs](src/app/reflect/originIndex.js) | [ioc reflect editjs](src/app/reflect/editIndex.js)
 - [eventLoop 原理](src/app/lesson27/index.ts) | [eventLoop Case](src/app/lesson27/eventLoop.ts) | [eventLoopRender](src/app/lesson27/eventLoopRender.ts) | [eventLoopReview](src/app/lesson27/eventLoopReview.ts)
-- [highOrderFunction](src/app//lesson28/index.ts) | [curring](src/app/lesson28/curring.ts)
+- [highOrderFunction](src/app/lesson28/index.ts) | [curring](src/app/lesson28/curring.ts)
+- [reduce](src/app/reduce/index.ts)
 
 ## 系列项目
 
